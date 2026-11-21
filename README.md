@@ -26,4 +26,4 @@ GitHub Pages will publish `index.html` and the `assets/` directory as a static s
 
 ## Language
 
-The site includes English pages and an Arabic localized home page with right-to-left layout. Use the language control in the header to switch between them.
+Use the header language control to switch between English and Arabic. The home page has a fully localized Arabic version; shared navigation, forms, product names, and common controls translate on the other pages. Your language choice is saved in the browser.

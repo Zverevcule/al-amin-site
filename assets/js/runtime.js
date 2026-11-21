@@ -108,6 +108,7 @@ function mount(name){
   cur=inst; curName=name; window.scrollTo(0,0);
   inst._render();
   try{ inst.componentDidMount&&inst.componentDidMount(); }catch(e){console.error(e);}
+  if(window.setSiteLanguage)window.setSiteLanguage((name==='Home'||name==='Home-AR')?meta.lang:(window.siteLang||meta.lang),false);
 }
 function route(){ var h=location.hash.replace(/^#\/?/,''); return window.PAGES[h]?h:'Home'; }
 function go(n){ if(location.hash==='#'+n)mount(n); else location.hash=n; }
@@ -115,8 +116,18 @@ document.addEventListener('click',function(ev){
   if(ev.defaultPrevented||ev.button!==0||ev.metaKey||ev.ctrlKey)return;
   var a=ev.target.closest&&ev.target.closest('a[href]'); if(!a)return;
   var href=a.getAttribute('href');
+  if(a.classList.contains('lang')){
+    ev.preventDefault();
+    var current=route();
+    var next=(current==='Home'||current==='Home-AR')?(current==='Home'?'ar':'en'):(window.siteLang==='ar'?'en':'ar');
+    if(current==='Home'||current==='Home-AR'){
+      window.setSiteLanguage(next,true);
+      go(next==='ar'?'Home-AR':'Home');
+    }else window.setSiteLanguage(next,true);
+    return;
+  }
   var m=/^\/?([\w-]+)\.dc\.html$/.exec(href);
-  if(m){ ev.preventDefault(); setTimeout(function(){ go(m[1]); },0); return; }
+  if(m){ ev.preventDefault(); setTimeout(function(){ go(m[1]==='Home'&&window.siteLang==='ar'?'Home-AR':m[1]); },0); return; }
   if(href==='#'){ ev.preventDefault(); return; }
   if(href.charAt(0)==='#'&&window.PAGES[href.slice(1)]){ ev.preventDefault(); setTimeout(function(){ go(href.slice(1)); },0); return; }
   if(href.charAt(0)==='#'){ ev.preventDefault(); var t=document.getElementById(href.slice(1)); if(t)t.scrollIntoView({behavior:'smooth',block:'start'}); }
