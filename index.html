@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AL AMIN — For Poultry Production</title>
+<link rel="stylesheet" href="assets/css/site.css">
+<style id="page-css"></style>
+
+
+
+</head>
+<body>
+<div id="app"></div>
+<template id="tpl-Home">
+
+<div class="aa" lang="en">
+<div class="pt" aria-hidden="true"></div>
+<header class="hdr" data-solid="0">
+<div class="hdr-in">
+<a class="logo-tab" href="Home.dc.html" aria-label="AL AMIN for Poultry Production — home" data-cursor="HOME"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"></a>
+<nav class="nav" aria-label="Primary"><a class="nav-a" href="Home.dc.html" aria-current="page">Home</a><a class="nav-a" href="About.dc.html">About</a><a class="nav-a" href="Products.dc.html">Products</a><a class="nav-a" href="Wholesale.dc.html">Wholesale</a><a class="nav-a" href="Contact.dc.html">Contact</a></nav>
+<div class="tools">
+<a class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a>
+<a class="tool hide-m" href="Account.dc.html" aria-label="My account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="M4.5 20c1.2-3.8 4-5.6 7.5-5.6s6.3 1.8 7.5 5.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg></a>
+<a class="tool" href="Cart.dc.html" aria-label="Cart, {{cart}} items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8zM9 8V6.5a3 3 0 016 0V8" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg><span class="badge {{bumpCls}}">{{cart}}</span></a>
+<button class="tool burger" type="button" onClick="{{toggleMenu}}" aria-label="Open menu" aria-expanded="{{menuStr}}"><i></i></button>
+</div>
+</div>
+<span class="hdr-bar" aria-hidden="true"></span>
+</header>
+<template data-sc="if" value="{{menuOpen}}" hint-placeholder-val="{{false}}">
+<div class="mm" role="dialog" aria-modal="true" aria-label="Menu">
+<div class="mm-top"><img data-ref="img:logo" alt="AL AMIN"><button class="ibtn" type="button" style="border-color: rgba(255,255,255,.3); color: #fff" onClick="{{closeMenu}}" aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2"></path></svg></button></div>
+<nav class="mm-nav" aria-label="Mobile"><a class="mm-a" href="Home.dc.html" style="--i: 0" onClick="{{closeMenu}}">Home<small>01</small></a><a class="mm-a" href="About.dc.html" style="--i: 1" onClick="{{closeMenu}}">About<small>02</small></a><a class="mm-a" href="Products.dc.html" style="--i: 2" onClick="{{closeMenu}}">Products<small>03</small></a><a class="mm-a" href="Wholesale.dc.html" style="--i: 3" onClick="{{closeMenu}}">Wholesale<small>04</small></a><a class="mm-a" href="Contact.dc.html" style="--i: 4" onClick="{{closeMenu}}">Contact<small>05</small></a><a class="mm-a" href="Account.dc.html" style="--i: 5" onClick="{{closeMenu}}">Account<small>06</small></a><a class="mm-a" href="Cart.dc.html" style="--i: 6" onClick="{{closeMenu}}">Cart<small>07</small></a></nav>
+<div class="mm-foot"><a class="btn btn--red btn--block" href="Wholesale.dc.html"><span class="btn-l">Business inquiry<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a style="color: #fff; align-self: flex-start" class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a><p class="slogan" style="font-size: 20px">....the place to be....</p></div>
+</div>
+</template>
+<main>
+<section class="hero on-deep" id="top" aria-label="Introduction">
+<div class="hero-media"><div class="hero-mi" data-px="0.08"><div class="ph ph--night has-img"><div class="ph-in"><img data-ref="img:hero-poultry-farm" alt="Healthy flock in a modern poultry house" loading="lazy" style="object-position: 60% 50%"></div></div></div><div class="hero-scrim"></div></div>
+<div class="wrap hero-in">
+<p class="eyebrow hero-eb"><b>AL AMIN</b> / For Poultry Production</p>
+<h1 class="d-xl hero-h"><span class="ln" style="--l: 0"><span>Quality you</span></span><span class="ln" style="--l: 1"><span>can trust.</span></span><span class="ln" style="--l: 2"><span><span class="mark">Freshness</span></span></span><span class="ln" style="--l: 3"><span>you can feel.</span></span></h1>
+<div class="hero-foot">
+<p class="lead hero-lead">Discover AL AMIN — committed to delivering quality poultry products and dependable solutions for individuals and businesses.</p>
+<div class="ctas"><a class="btn" href="Products.dc.html" data-mag=""><span class="btn-l">Explore Our Products<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a class="btn btn--ghost-inv" href="Wholesale.dc.html" data-mag=""><span class="btn-l">Business Solutions</span></a></div>
+</div>
+</div>
+<div class="wrap hero-meta"><p class="slogan" lang="en" dir="ltr">....the place to be....</p><a class="scroll-ind" href="#trust">Scroll<i></i></a><p class="cap">Campaign still · placeholder for commissioned photography</p></div>
+</section>
+
+<section class="trust on-red" id="trust" aria-label="What we stand for">
+<div class="marquee"><div class="marquee-t"><span class="mq">Quality-Focused Production</span><i class="mq-s"></i><span class="mq">Reliable Supply</span><i class="mq-s"></i><span class="mq">Products for Every Need</span><i class="mq-s"></i><span class="mq">Individual &amp; Business Solutions</span><i class="mq-s"></i></div><div class="marquee-t" aria-hidden="true"><span class="mq">Quality-Focused Production</span><i class="mq-s"></i><span class="mq">Reliable Supply</span><i class="mq-s"></i><span class="mq">Products for Every Need</span><i class="mq-s"></i><span class="mq">Individual &amp; Business Solutions</span><i class="mq-s"></i></div></div>
+</section>
+
+<section class="sec" id="categories">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>01</b> / Product categories</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>Cut for</span></span><span class="ln" style="--l: 1"><span>every kitchen.</span></span></h2></div><div class="sec-aside"><p class="body" data-rv="">From whole birds to ready-to-cook favourites — explore the range by the way you cook.</p><span class="note" data-rv="fade"><span class="ph-dot"></span>Sample categories · range to be confirmed</span></div></div>
+<div class="cats"><a class="cat cat--a" href="Products.dc.html" data-cursor="EXPLORE" data-rv="img" style="--i: 0">
+<div class="ph ph--warm has-img"><div class="ph-in"><img data-ref="img:pack-cat" alt="AL AMIN Fresh Local Chicken in branded packaging" style="object-position: 50% 38%"></div></div>
+<div class="cat-lbl"><span class="cat-no">01</span><h3 class="cat-name">Whole Birds</h3><p class="cat-d">Cleaned whole chickens for roasting and family meals.</p><span class="tlink">Explore<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></div>
+</a><a class="cat cat--b" href="Products.dc.html" data-cursor="EXPLORE" data-rv="img" style="--i: 1">
+<div class="ph ph--clay has-img"><div class="ph-in"><img data-ref="img:cat-fresh-cuts" alt="Fresh chicken cuts with AL AMIN pack" loading="lazy"></div></div>
+<div class="cat-lbl"><span class="cat-no">02</span><h3 class="cat-name">Fresh Cuts</h3><p class="cat-d">Wings, drumsticks, quarters — portioned and tray-packed.</p><span class="tlink">Explore<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></div>
+</a><a class="cat cat--c" href="Products.dc.html" data-cursor="EXPLORE" data-rv="img" style="--i: 2">
+<div class="ph ph--ice has-img"><div class="ph-in"><img data-ref="img:cat-boneless" alt="Chicken breast fillets on slate" loading="lazy"></div></div>
+<div class="cat-lbl"><span class="cat-no">03</span><h3 class="cat-name">Boneless &amp; Fillets</h3><p class="cat-d">Breast fillets, thighs and mince for everyday cooking.</p><span class="tlink">Explore<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></div>
+</a><a class="cat cat--d" href="Products.dc.html" data-cursor="EXPLORE" data-rv="img" style="--i: 3">
+<div class="ph ph--night has-img"><div class="ph-in"><img data-ref="img:cat-ready-to-cook" alt="Roast chicken, ready to serve" loading="lazy"></div></div>
+<div class="cat-lbl"><span class="cat-no">04</span><h3 class="cat-name">Ready to Cook</h3><p class="cat-d">Marinated and breaded — dinner in minutes.</p><span class="tlink">Explore<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></div>
+</a></div>
+</div>
+</section>
+
+<section class="sec on-paper" id="best">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>02</b> / Best sellers</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>The everyday</span></span><span class="ln" style="--l: 1"><span>favourites.</span></span></h2></div>
+<div class="bs-ctl"><button class="ibtn" type="button" onClick="{{bsPrev}}" aria-label="Previous"><svg class="flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.9"></path></svg></button><button class="ibtn" type="button" onClick="{{bsNext}}" aria-label="Next"><svg class="flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.9"></path></svg></button><a class="tlink" href="Products.dc.html">View all products<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></a></div></div>
+</div>
+<div class="rail" id="bsRail" data-drag="" data-cursor="DRAG"><div class="rail-t">
+<template data-sc="for" list="{{best}}" as="p" hint-placeholder-count="6">
+<article class="pc pin" style="--i: {{p.i}}">
+<a class="pc-media" href="Product.dc.html" data-cursor="VIEW" aria-label="View {{p.name}}">
+<div class="ph {{p.tone}} pc-a {{p.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{p.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{p.img}}" alt="{{p.name}}" loading="lazy"></template></div><template data-sc="if" value="{{p.noImg}}" hint-placeholder-val="{{true}}"><span class="ph-cap">{{p.shot}}</span></template></div>
+<template data-sc="if" value="{{p.showB}}" hint-placeholder-val="{{true}}"><div class="ph {{p.tone2}} pc-b {{p.img2Cls}}" aria-hidden="true"><div class="ph-in"><template data-sc="if" value="{{p.hasImg2}}" hint-placeholder-val="{{false}}"><img data-ref="{{p.img2}}" alt="" loading="lazy"></template></div><template data-sc="if" value="{{p.noImg2}}" hint-placeholder-val="{{true}}"><span class="ph-cap">Alt angle — pack shot</span></template></div></template>
+<span class="pc-no">No. {{p.no}}</span><span class="pc-w">{{p.weight}}</span>
+</a>
+<div class="pc-body">
+<p class="pc-cat">{{p.catName}}</p>
+<h3 class="pc-name"><a href="Product.dc.html">{{p.name}}</a></h3>
+<p class="pc-desc">{{p.desc}}</p>
+<div class="pc-foot">
+<p class="price"><span class="price-n">{{p.priceS}}</span><span class="price-c">EGP</span><span class="tag-s">Sample price</span></p>
+<button class="{{p.addCls}}" type="button" onClick="{{p.add}}" aria-label="Add: {{p.name}}"><span class="add-a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>Add</span><span class="add-b"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg>Added</span></button>
+</div>
+</div>
+</article>
+</template>
+</div></div>
+</section>
+
+<section class="sec on-navy" id="why">
+<div class="wrap why-g">
+<div class="why-l">
+<p class="eyebrow" data-rv=""><b>03</b> / Why AL AMIN</p>
+<h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>One name.</span></span><span class="ln" style="--l: 1"><span>One standard.</span></span></h2>
+<p class="lead" style="color: rgba(255,255,255,.86)" data-rv="">Every product that carries the AL AMIN name carries the same promise — to the family cooking dinner and to the kitchen serving hundreds.</p>
+<div class="why-media" data-rv="img">
+<template data-sc="for" list="{{why}}" as="w" hint-placeholder-count="5"><div class="ph why-ph {{w.tone}} {{w.on}} {{w.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{w.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{w.img}}" alt="AL AMIN Fresh Eggs cartons" loading="lazy"></template></div><template data-sc="if" value="{{w.noImg}}" hint-placeholder-val="{{true}}"><span class="ph-cap">{{w.shot}}</span></template></div></template>
+</div>
+</div>
+<div>
+<ol class="why-list">
+<template data-sc="for" list="{{why}}" as="w" hint-placeholder-count="5">
+<li class="why-i {{w.on}}"><button class="why-b" type="button" onClick="{{w.pick}}" onMouseEnter="{{w.pick}}" aria-expanded="{{w.exp}}"><span class="why-n">{{w.n}}</span><span class="why-t">{{w.title}}</span><span class="acc-ic" aria-hidden="true"></span></button><div class="acc-p" data-open="{{w.exp}}"><div><p class="body">{{w.text}}</p></div></div></li>
+</template>
+</ol>
+<p class="note" style="margin-top: 32px">Value statements · to be approved by AL AMIN</p>
+</div>
+</div>
+</section>
+
+<section class="sec" id="range">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>04</b> / Our range</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>Find exactly</span></span><span class="ln" style="--l: 1"><span>what you need.</span></span></h2></div></div>
+<div class="tb">
+<div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle><path d="M15.5 15.5L21 21" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg><label class="vh" for="q-en">Search products</label><input id="q-en" class="inp" type="search" placeholder="Search products" value="{{q}}" onChange="{{setQ}}"></div>
+<div class="field sort"><label class="vh" for="s-en">Sort products</label><select id="s-en" class="inp" value="{{sort}}" onChange="{{setSort}}"><option value="featured">Sort: Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name: A–Z</option></select></div>
+</div>
+<div class="chips" role="group" aria-label="Filter by category" style="margin-bottom: 8px">
+<template data-sc="for" list="{{chips}}" as="c" hint-placeholder-count="5"><button class="chip" type="button" aria-pressed="{{c.pressed}}" onClick="{{c.pick}}">{{c.name}} <em>{{c.count}}</em></button></template>
+</div>
+<div class="res cap" aria-live="polite"><span>Showing {{shownN}} of {{totalN}} products</span><a class="tlink" href="Products.dc.html">View the full range<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></a></div>
+<template data-sc="if" value="{{loading}}" hint-placeholder-val="{{false}}"><div class="pgrid" aria-busy="true"><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div></div></template>
+<template data-sc="if" value="{{showGrid}}" hint-placeholder-val="{{true}}"><div class="pgrid">
+<template data-sc="for" list="{{shown}}" as="p" hint-placeholder-count="8">
+<article class="pc pin" style="--i: {{p.i}}">
+<a class="pc-media" href="Product.dc.html" data-cursor="VIEW" aria-label="View {{p.name}}">
+<div class="ph {{p.tone}} pc-a {{p.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{p.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{p.img}}" alt="{{p.name}}" loading="lazy"></template></div><template data-sc="if" value="{{p.noImg}}" hint-placeholder-val="{{true}}"><span class="ph-cap">{{p.shot}}</span></template></div>
+<template data-sc="if" value="{{p.showB}}" hint-placeholder-val="{{true}}"><div class="ph {{p.tone2}} pc-b {{p.img2Cls}}" aria-hidden="true"><div class="ph-in"><template data-sc="if" value="{{p.hasImg2}}" hint-placeholder-val="{{false}}"><img data-ref="{{p.img2}}" alt="" loading="lazy"></template></div><template data-sc="if" value="{{p.noImg2}}" hint-placeholder-val="{{true}}"><span class="ph-cap">Alt angle — pack shot</span></template></div></template>
+<span class="pc-no">No. {{p.no}}</span><span class="pc-w">{{p.weight}}</span>
+</a>
+<div class="pc-body">
+<p class="pc-cat">{{p.catName}}</p>
+<h3 class="pc-name"><a href="Product.dc.html">{{p.name}}</a></h3>
+<p class="pc-desc">{{p.desc}}</p>
+<div class="pc-foot">
+<p class="price"><span class="price-n">{{p.priceS}}</span><span class="price-c">EGP</span><span class="tag-s">Sample price</span></p>
+<button class="{{p.addCls}}" type="button" onClick="{{p.add}}" aria-label="Add: {{p.name}}"><span class="add-a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>Add</span><span class="add-b"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg>Added</span></button>
+</div>
+</div>
+</article>
+</template>
+</div></template>
+<template data-sc="if" value="{{isEmpty}}" hint-placeholder-val="{{false}}"><div class="empty"><p class="eyebrow"><b>0</b> / products</p><h3 class="d-m">No products match your search.</h3><p class="body">Try a different word, or clear the filters to see the full range.</p><button class="btn btn--navy" type="button" onClick="{{clearAll}}"><span class="btn-l">Clear filters</span></button></div></template>
+</div>
+</section>
+
+<section class="sec on-deep b2b" id="business">
+<div class="wrap">
+<div class="b2b-top"><p class="eyebrow" data-rv=""><b>05</b> / For business</p><p class="b2b-sw" aria-hidden="true"><span>Retail</span><span class="on">Wholesale</span></p></div>
+<span class="b2b-line" data-rv="line"></span>
+<div class="b2b-g">
+<h2 class="d-xl lns" data-rv=""><span class="ln" style="--l: 0"><span>Built for business.</span></span><span class="ln" style="--l: 1"><span>Ready for</span></span><span class="ln" style="--l: 2"><span>reliable supply.</span></span></h2>
+<div class="b2b-media">
+<div class="ph ph--steel b2b-m1 zoom has-img" data-rv="img"><div class="ph-in"><img data-ref="img:b2b-supply-chicken" alt="Fresh whole chicken in a modern poultry facility" loading="lazy"></div></div>
+<div class="b2b-m2" data-px="0.06"><div class="ph ph--warm has-img" style="position: absolute; inset: 0" data-rv="img"><div class="ph-in"><img data-ref="img:b2b-truck" alt="AL AMIN refrigerated delivery truck" loading="lazy" style="object-position: 45% 50%"></div></div></div>
+</div>
+</div>
+<div class="b2b-foot">
+<p class="lead" style="color: rgba(255,255,255,.88)" data-rv="">Explore business supply solutions designed for traders, distributors, restaurants, and food businesses.</p>
+<ul class="b2b-types"><li data-rv="" style="--i: 0">Traders<span>01</span></li><li data-rv="" style="--i: 1">Distributors<span>02</span></li><li data-rv="" style="--i: 2">Restaurants<span>03</span></li><li data-rv="" style="--i: 3">Food businesses<span>04</span></li></ul>
+<div class="ctas"><a class="btn btn--white" href="Wholesale.dc.html" data-mag=""><span class="btn-l">Explore Wholesale Solutions<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a class="btn btn--ghost-inv" href="Wholesale.dc.html"><span class="btn-l">Request a quotation</span></a></div>
+</div>
+</div>
+</section>
+
+<section class="sec on-paper" id="journey">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>06</b> / From farm to your table</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>From farm</span></span><span class="ln" style="--l: 1"><span>to your table.</span></span></h2></div><div class="sec-aside"><p class="body" data-rv="">Five stages, one standard — follow the journey every product takes before it reaches you.</p><span class="note"><span class="ph-dot"></span>Illustrative journey · stages pending confirmation</span></div></div>
+<div class="jr">
+<div class="jr-media"><div class="jr-stick">
+<template data-sc="for" list="{{stages}}" as="s" hint-placeholder-count="5"><div class="ph jr-ph {{s.tone}} {{s.cls}} {{s.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{s.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{s.img}}" alt="{{s.title}}" loading="lazy"></template></div><template data-sc="if" value="{{s.noImg}}" hint-placeholder-val="{{true}}"><span class="ph-cap">{{s.shot}}</span></template></div></template>
+<div class="jr-hud"><span class="jr-count"><b>{{stageN}}</b> / 05</span><span class="jr-bar"><span style="transform: scaleX({{stageP}})"></span></span><span class="cap">{{stageName}}</span></div>
+</div></div>
+<ol class="jr-steps"><span class="jr-fill" style="height: {{fillH}}"></span>
+<template data-sc="for" list="{{stages}}" as="s" hint-placeholder-count="5">
+<li class="jr-step {{s.cls}}" data-step="{{s.idx}}"><button class="jr-dot" type="button" onClick="{{s.pick}}" aria-label="Stage {{s.n}}: {{s.title}}">{{s.n}}</button><div class="jr-txt"><p class="jr-k">Stage {{s.n}}</p><h3 class="d-m">{{s.title}}</h3><p class="body" style="max-width: 44ch">{{s.text}}</p><div class="ph jr-inline {{s.tone}} {{s.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{s.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{s.img}}" alt="{{s.title}}" loading="lazy"></template></div><template data-sc="if" value="{{s.noImg}}" hint-placeholder-val="{{true}}"><span class="ph-cap">{{s.shot}}</span></template></div></div></li>
+</template>
+</ol>
+</div>
+</div>
+</section>
+
+<section class="sec" id="quality">
+<div class="wrap q-g">
+<div class="q-media">
+<div class="ph ph--steel q1 has-img" data-rv="img"><div class="ph-in"><img data-ref="img:quality-inspection" alt="Quality check of an AL AMIN pack on the line" loading="lazy" style="object-position: 35% 30%"></div></div>
+<div class="q2" data-px="0.07"><div class="ph ph--ice has-img" style="position: absolute; inset: 0" data-rv="img"><div class="ph-in"><img data-ref="img:quality-eggs-line" alt="AL AMIN Fresh Eggs on the packing line" loading="lazy"></div></div></div>
+<div class="q3" data-px="-0.05"><div class="ph ph--red has-img" style="position: absolute; inset: 0" data-rv="img"><div class="ph-in"><img data-ref="img:quality-detail" alt="Fresh whole chicken detail" loading="lazy"></div></div></div>
+</div>
+<div class="q-txt">
+<p class="eyebrow" data-rv=""><b>07</b> / Our standard</p>
+<h2 class="d-xl lns" data-rv=""><span class="ln" style="--l: 0"><span>Quality</span></span><span class="ln" style="--l: 1"><span>is our</span></span><span class="ln" style="--l: 2"><span>standard.</span></span></h2>
+<p class="lead" data-rv="">Quality is not a department. It is the way every step is done — and the reason customers come back.</p>
+<ol class="q-list"><li data-rv="" style="--i: 0"><span class="q-n">01</span><div><h3 class="d-s">Attention to product quality</h3><p class="body">Care shows in the details — how every product is trimmed, handled and presented.</p></div></li><li data-rv="" style="--i: 1"><span class="q-n">02</span><div><h3 class="d-s">Production standards</h3><p class="body">Defined ways of working that keep each batch consistent with the last.</p></div></li><li data-rv="" style="--i: 2"><span class="q-n">03</span><div><h3 class="d-s">Quality inspection</h3><p class="body">Products are checked before they move on, so what reaches you meets the standard.</p></div></li><li data-rv="" style="--i: 3"><span class="q-n">04</span><div><h3 class="d-s">Careful packaging</h3><p class="body">Sealed and labelled to protect freshness and make storage simple.</p></div></li></ol>
+<span class="note"><span class="ph-dot"></span>No certifications shown until documentation is supplied</span>
+</div>
+</div>
+</section>
+
+<section class="sec on-navy" id="voices">
+<div class="wrap">
+<div class="sec-head" style="align-items: center"><div><p class="eyebrow" data-rv=""><b>08</b> / Customer voices</p></div><span class="note">Sample layout · awaiting verified testimonials</span></div>
+<div class="tst-stage" aria-live="polite"><span class="tst-q" aria-hidden="true">“</span>
+<template data-sc="for" list="{{tst}}" as="x" hint-placeholder-count="3"><figure class="tst-s {{x.cls}}" aria-hidden="{{x.hidden}}"><blockquote class="tst-text">{{x.quote}}</blockquote><figcaption><b>{{x.who}}</b><span>{{x.role}}</span></figcaption></figure></template>
+</div>
+<div class="tst-ctl"><span class="tst-c">0{{tN}} / 03</span><span class="tst-bar"><span style="transform: scaleX({{tP}})"></span></span><button class="ibtn" type="button" onClick="{{tPrev}}" aria-label="Previous"><svg class="flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.9"></path></svg></button><button class="ibtn" type="button" onClick="{{tNext}}" aria-label="Next"><svg class="flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.9"></path></svg></button></div>
+</div>
+</section>
+
+<section class="cta on-red" id="cta">
+<div class="wrap cta-g">
+<h2 class="d-xl lns" data-rv=""><span class="ln" style="--l: 0"><span>Let’s make</span></span><span class="ln" style="--l: 1"><span>quality part</span></span><span class="ln" style="--l: 2"><span>of every table.</span></span></h2>
+<div class="cta-side">
+<p class="lead" data-rv="">Shop for your home, or talk to our team about supplying your business.</p>
+<div class="ctas"><a class="btn btn--white" href="Products.dc.html" data-mag=""><span class="btn-l">Explore Products<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a class="btn btn--ghost-inv" href="Contact.dc.html"><span class="btn-l">Contact Our Team</span></a><a class="btn btn--navy" href="Wholesale.dc.html"><span class="btn-l">Business Inquiry</span></a></div>
+<p class="slogan" lang="en" dir="ltr">....the place to be....</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr-top">
+<div class="ftr-brand"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"><p class="body" style="max-width: 36ch">Quality you can trust. Freshness you can feel. For homes and for businesses.</p></div>
+<div><h4>Explore</h4><ul><li><a href="Home.dc.html">Home</a></li><li><a href="About.dc.html">About Us</a></li><li><a href="Products.dc.html">Products</a></li><li><a href="Contact.dc.html">Contact</a></li><li><a href="Account.dc.html">My Account</a></li></ul></div><div><h4>Products</h4><ul><li><a href="Products.dc.html">Whole Birds</a></li><li><a href="Products.dc.html">Fresh Cuts</a></li><li><a href="Products.dc.html">Boneless &amp; Fillets</a></li><li><a href="Products.dc.html">Ready to Cook</a></li></ul></div><div><h4>Business</h4><ul><li><a href="Wholesale.dc.html">Wholesale Solutions</a></li><li><a href="Wholesale.dc.html">Request a Quotation</a></li><li><a href="Wholesale.dc.html">Restaurants &amp; Catering</a></li><li><a href="Wholesale.dc.html">Distributors &amp; Traders</a></li></ul></div>
+<div><h4>Contact</h4><ul><li class="ftr-ph">[Phone number]</li><li class="ftr-ph">[Email address]</li><li class="ftr-ph">[Address — awaiting confirmation]</li></ul><h4 style="margin-top: 32px">Follow</h4><div class="socials"><a href="#" aria-label="Facebook — link to confirm">Facebook</a><a href="#" aria-label="Instagram — link to confirm">Instagram</a><a href="#" aria-label="LinkedIn — link to confirm">LinkedIn</a><a href="#" aria-label="WhatsApp — link to confirm">WhatsApp</a></div></div>
+</div>
+<p class="ftr-slogan" lang="en" dir="ltr" data-rv="mask"><span>....</span>the place to be<span>....</span></p>
+<div class="ftr-bot"><span>© 2026 AL AMIN for Poultry Production. All rights reserved.</span><span>Contact details &amp; social accounts awaiting company confirmation</span></div>
+</div>
+</footer>
+<template data-sc="if" value="{{hasToast}}" hint-placeholder-val="{{false}}">
+<div class="toast" role="status" aria-live="polite"><span class="toast-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg></span><p><b>Added to cart</b>{{toastName}}</p><a class="btn btn--white btn--sm" href="Cart.dc.html"><span class="btn-l">View cart</span></a></div>
+</template>
+<p class="proto"><span class="ph-dot"></span>Design prototype · sample content &amp; prices</p>
+<div class="cur" aria-hidden="true"><div class="cur-ring"></div><div class="cur-dot"></div></div>
+</div>
+</template>
+<template id="tpl-Home-AR">
+
+<div class="aa" dir="rtl" lang="ar">
+<div class="pt" aria-hidden="true"></div>
+<header class="hdr" data-solid="0">
+<div class="hdr-in">
+<a class="logo-tab" href="Home-AR.dc.html" aria-label="الأمين للإنتاج الداجني — الرئيسية" data-cursor=""><img data-ref="img:logo" alt="AL AMIN for Poultry Production"></a>
+<nav class="nav" aria-label="القائمة الرئيسية"><a class="nav-a" href="Home-AR.dc.html" aria-current="page">الرئيسية</a><a class="nav-a" href="About.dc.html">من نحن</a><a class="nav-a" href="Products.dc.html">المنتجات</a><a class="nav-a" href="Wholesale.dc.html">الجملة والشركات</a><a class="nav-a" href="Contact.dc.html">تواصل معنا</a></nav>
+<div class="tools">
+<a class="tool lang lang-en" href="Home.dc.html" lang="en" aria-label="Switch to English">EN</a>
+<a class="tool hide-m" href="Account.dc.html" aria-label="حسابي"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="M4.5 20c1.2-3.8 4-5.6 7.5-5.6s6.3 1.8 7.5 5.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg></a>
+<a class="tool" href="Cart.dc.html" aria-label="السلة, {{cart}} منتجات"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8zM9 8V6.5a3 3 0 016 0V8" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg><span class="badge {{bumpCls}}">{{cart}}</span></a>
+<button class="tool burger" type="button" onClick="{{toggleMenu}}" aria-label="فتح القائمة" aria-expanded="{{menuStr}}"><i></i></button>
+</div>
+</div>
+<span class="hdr-bar" aria-hidden="true"></span>
+</header>
+<template data-sc="if" value="{{menuOpen}}" hint-placeholder-val="{{false}}">
+<div class="mm" role="dialog" aria-modal="true" aria-label="القائمة">
+<div class="mm-top"><img data-ref="img:logo" alt="AL AMIN"><button class="ibtn" type="button" style="border-color: rgba(255,255,255,.3); color: #fff" onClick="{{closeMenu}}" aria-label="إغلاق القائمة"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2"></path></svg></button></div>
+<nav class="mm-nav" aria-label="قائمة الجوال"><a class="mm-a" href="Home-AR.dc.html" style="--i: 0" onClick="{{closeMenu}}">الرئيسية<small>01</small></a><a class="mm-a" href="About.dc.html" style="--i: 1" onClick="{{closeMenu}}">من نحن<small>02</small></a><a class="mm-a" href="Products.dc.html" style="--i: 2" onClick="{{closeMenu}}">المنتجات<small>03</small></a><a class="mm-a" href="Wholesale.dc.html" style="--i: 3" onClick="{{closeMenu}}">الجملة والشركات<small>04</small></a><a class="mm-a" href="Contact.dc.html" style="--i: 4" onClick="{{closeMenu}}">تواصل معنا<small>05</small></a><a class="mm-a" href="Account.dc.html" style="--i: 5" onClick="{{closeMenu}}">حسابي<small>06</small></a><a class="mm-a" href="Cart.dc.html" style="--i: 6" onClick="{{closeMenu}}">السلة<small>07</small></a></nav>
+<div class="mm-foot"><a class="btn btn--red btn--block" href="Wholesale.dc.html"><span class="btn-l">طلب عرض سعر للشركات<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a style="color: #fff; align-self: flex-start" class="tool lang lang-en" href="Home.dc.html" lang="en" aria-label="Switch to English">EN</a><p class="slogan" style="font-size: 20px">....the place to be....</p></div>
+</div>
+</template>
+<main>
+<section class="hero on-deep" id="top" aria-label="مقدمة">
+<div class="hero-media"><div class="hero-mi" data-px="0.08"><div class="ph ph--night has-img"><div class="ph-in"><img data-ref="img:hero-poultry-farm" alt="قطيع صحي في عنبر دواجن حديث" loading="lazy" style="object-position: 60% 50%"></div></div></div><div class="hero-scrim"></div></div>
+<div class="wrap hero-in">
+<p class="eyebrow hero-eb"><b>الأمين</b> / للإنتاج الداجني</p>
+<h1 class="d-xl hero-h"><span class="ln" style="--l: 0"><span>جودة</span></span><span class="ln" style="--l: 1"><span>يمكنك الوثوق بها.</span></span><span class="ln" style="--l: 2"><span><span class="mark">وطزاجة</span></span></span><span class="ln" style="--l: 3"><span>تشعر بها.</span></span></h1>
+<div class="hero-foot">
+<p class="lead hero-lead">اكتشف الأمين — التزام بتقديم منتجات دواجن عالية الجودة وحلول يُعتمد عليها للأفراد والشركات.</p>
+<div class="ctas"><a class="btn" href="Products.dc.html" data-mag=""><span class="btn-l">تصفّح منتجاتنا<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a class="btn btn--ghost-inv" href="Wholesale.dc.html" data-mag=""><span class="btn-l">حلول الشركات</span></a></div>
+</div>
+</div>
+<div class="wrap hero-meta"><p class="slogan" lang="en" dir="ltr">....the place to be....</p><a class="scroll-ind" href="#trust">مرّر<i></i></a><p class="cap">لقطة حملة · مساحة لصور احترافية مُكلَّفة</p></div>
+</section>
+
+<section class="trust on-red" id="trust" aria-label="ما نلتزم به">
+<div class="marquee"><div class="marquee-t"><span class="mq">إنتاج يركّز على الجودة</span><i class="mq-s"></i><span class="mq">إمداد يُعتمد عليه</span><i class="mq-s"></i><span class="mq">منتجات لكل احتياج</span><i class="mq-s"></i><span class="mq">حلول للأفراد والشركات</span><i class="mq-s"></i></div><div class="marquee-t" aria-hidden="true"><span class="mq">إنتاج يركّز على الجودة</span><i class="mq-s"></i><span class="mq">إمداد يُعتمد عليه</span><i class="mq-s"></i><span class="mq">منتجات لكل احتياج</span><i class="mq-s"></i><span class="mq">حلول للأفراد والشركات</span><i class="mq-s"></i></div></div>
+</section>
+
+<section class="sec" id="categories">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>٠١</b> / فئات المنتجات</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>لكل مطبخ</span></span><span class="ln" style="--l: 1"><span>قطعته المناسبة.</span></span></h2></div><div class="sec-aside"><p class="body" data-rv="">من الدجاج الكامل إلى الأصناف الجاهزة للطهي — تصفّح التشكيلة حسب طريقة طهيك.</p><span class="note" data-rv="fade"><span class="ph-dot"></span>فئات مقترحة · التشكيلة بانتظار التأكيد</span></div></div>
+<div class="cats"><a class="cat cat--a" href="Products.dc.html" data-cursor="استكشف" data-rv="img" style="--i: 0">
+<div class="ph ph--warm has-img"><div class="ph-in"><img data-ref="img:pack-cat" alt="دجاج الأمين الطازج في عبوته" style="object-position: 50% 38%"></div></div>
+<div class="cat-lbl"><span class="cat-no">01</span><h3 class="cat-name">دجاج كامل</h3><p class="cat-d">دجاج كامل منظف للتحمير ووجبات العائلة.</p><span class="tlink">استكشف<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></div>
+</a><a class="cat cat--b" href="Products.dc.html" data-cursor="استكشف" data-rv="img" style="--i: 1">
+<div class="ph ph--clay has-img"><div class="ph-in"><img data-ref="img:cat-fresh-cuts" alt="قطعيات دجاج طازجة مع عبوة الأمين" loading="lazy"></div></div>
+<div class="cat-lbl"><span class="cat-no">02</span><h3 class="cat-name">قطعيات طازجة</h3><p class="cat-d">أجنحة ودبابيس وأوراك — مُقسّمة ومعبأة.</p><span class="tlink">استكشف<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></div>
+</a><a class="cat cat--c" href="Products.dc.html" data-cursor="استكشف" data-rv="img" style="--i: 2">
+<div class="ph ph--ice has-img"><div class="ph-in"><img data-ref="img:cat-boneless" alt="فيليه صدور الدجاج" loading="lazy"></div></div>
+<div class="cat-lbl"><span class="cat-no">03</span><h3 class="cat-name">منزوع العظم وفيليه</h3><p class="cat-d">فيليه صدور وأفخاذ ومفروم للطهي اليومي.</p><span class="tlink">استكشف<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></div>
+</a><a class="cat cat--d" href="Products.dc.html" data-cursor="استكشف" data-rv="img" style="--i: 3">
+<div class="ph ph--night has-img"><div class="ph-in"><img data-ref="img:cat-ready-to-cook" alt="دجاج محمّر جاهز للتقديم" loading="lazy"></div></div>
+<div class="cat-lbl"><span class="cat-no">04</span><h3 class="cat-name">جاهز للطهي</h3><p class="cat-d">متبّل ومغطّى بالبقسماط — عشاء في دقائق.</p><span class="tlink">استكشف<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></div>
+</a></div>
+</div>
+</section>
+
+<section class="sec on-paper" id="best">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>٠٢</b> / الأكثر مبيعًا</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>المفضّلة</span></span><span class="ln" style="--l: 1"><span>كل يوم.</span></span></h2></div>
+<div class="bs-ctl"><button class="ibtn" type="button" onClick="{{bsPrev}}" aria-label="السابق"><svg class="flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.9"></path></svg></button><button class="ibtn" type="button" onClick="{{bsNext}}" aria-label="التالي"><svg class="flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.9"></path></svg></button><a class="tlink" href="Products.dc.html">عرض كل المنتجات<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></a></div></div>
+</div>
+<div class="rail" id="bsRail" data-drag="" data-cursor="اسحب"><div class="rail-t">
+<template data-sc="for" list="{{best}}" as="p" hint-placeholder-count="6">
+<article class="pc pin" style="--i: {{p.i}}">
+<a class="pc-media" href="Product.dc.html" data-cursor="عرض" aria-label="عرض {{p.name}}">
+<div class="ph {{p.tone}} pc-a {{p.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{p.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{p.img}}" alt="{{p.name}}" loading="lazy"></template></div><template data-sc="if" value="{{p.noImg}}" hint-placeholder-val="{{true}}"><span class="ph-cap">{{p.shot}}</span></template></div>
+<template data-sc="if" value="{{p.showB}}" hint-placeholder-val="{{true}}"><div class="ph {{p.tone2}} pc-b {{p.img2Cls}}" aria-hidden="true"><div class="ph-in"><template data-sc="if" value="{{p.hasImg2}}" hint-placeholder-val="{{false}}"><img data-ref="{{p.img2}}" alt="" loading="lazy"></template></div><template data-sc="if" value="{{p.noImg2}}" hint-placeholder-val="{{true}}"><span class="ph-cap">زاوية بديلة — لقطة العبوة</span></template></div></template>
+<span class="pc-no">No. {{p.no}}</span><span class="pc-w">{{p.weight}}</span>
+</a>
+<div class="pc-body">
+<p class="pc-cat">{{p.catName}}</p>
+<h3 class="pc-name"><a href="Product.dc.html">{{p.name}}</a></h3>
+<p class="pc-desc">{{p.desc}}</p>
+<div class="pc-foot">
+<p class="price"><span class="price-n">{{p.priceS}}</span><span class="price-c">ج.م</span><span class="tag-s">سعر تجريبي</span></p>
+<button class="{{p.addCls}}" type="button" onClick="{{p.add}}" aria-label="أضف: {{p.name}}"><span class="add-a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>أضف</span><span class="add-b"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg>تمت الإضافة</span></button>
+</div>
+</div>
+</article>
+</template>
+</div></div>
+</section>
+
+<section class="sec on-navy" id="why">
+<div class="wrap why-g">
+<div class="why-l">
+<p class="eyebrow" data-rv=""><b>٠٣</b> / لماذا الأمين</p>
+<h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>اسم واحد.</span></span><span class="ln" style="--l: 1"><span>معيار واحد.</span></span></h2>
+<p class="lead" style="color: rgba(255,255,255,.86)" data-rv="">كل منتج يحمل اسم الأمين يحمل الوعد نفسه — للأسرة التي تُعدّ العشاء، وللمطبخ الذي يخدم المئات.</p>
+<div class="why-media" data-rv="img">
+<template data-sc="for" list="{{why}}" as="w" hint-placeholder-count="5"><div class="ph why-ph {{w.tone}} {{w.on}} {{w.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{w.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{w.img}}" alt="AL AMIN Fresh Eggs cartons" loading="lazy"></template></div><template data-sc="if" value="{{w.noImg}}" hint-placeholder-val="{{true}}"><span class="ph-cap">{{w.shot}}</span></template></div></template>
+</div>
+</div>
+<div>
+<ol class="why-list">
+<template data-sc="for" list="{{why}}" as="w" hint-placeholder-count="5">
+<li class="why-i {{w.on}}"><button class="why-b" type="button" onClick="{{w.pick}}" onMouseEnter="{{w.pick}}" aria-expanded="{{w.exp}}"><span class="why-n">{{w.n}}</span><span class="why-t">{{w.title}}</span><span class="acc-ic" aria-hidden="true"></span></button><div class="acc-p" data-open="{{w.exp}}"><div><p class="body">{{w.text}}</p></div></div></li>
+</template>
+</ol>
+<p class="note" style="margin-top: 32px">عبارات القيم · بانتظار اعتماد الأمين</p>
+</div>
+</div>
+</section>
+
+<section class="sec" id="range">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>٠٤</b> / تشكيلتنا</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>اعثر على</span></span><span class="ln" style="--l: 1"><span>ما تحتاجه تمامًا.</span></span></h2></div></div>
+<div class="tb">
+<div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle><path d="M15.5 15.5L21 21" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg><label class="vh" for="q-ar">ابحث عن منتج</label><input id="q-ar" class="inp" type="search" placeholder="ابحث عن منتج" value="{{q}}" onChange="{{setQ}}"></div>
+<div class="field sort"><label class="vh" for="s-ar">ترتيب المنتجات</label><select id="s-ar" class="inp" value="{{sort}}" onChange="{{setSort}}"><option value="featured">الترتيب: المميز</option><option value="low">السعر: من الأقل</option><option value="high">السعر: من الأعلى</option><option value="name">الاسم: أ–ي</option></select></div>
+</div>
+<div class="chips" role="group" aria-label="تصفية حسب الفئة" style="margin-bottom: 8px">
+<template data-sc="for" list="{{chips}}" as="c" hint-placeholder-count="5"><button class="chip" type="button" aria-pressed="{{c.pressed}}" onClick="{{c.pick}}">{{c.name}} <em>{{c.count}}</em></button></template>
+</div>
+<div class="res cap" aria-live="polite"><span>عرض {{shownN}} من {{totalN}} منتجات</span><a class="tlink" href="Products.dc.html">عرض التشكيلة كاملة<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></a></div>
+<template data-sc="if" value="{{loading}}" hint-placeholder-val="{{false}}"><div class="pgrid" aria-busy="true"><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div></div></template>
+<template data-sc="if" value="{{showGrid}}" hint-placeholder-val="{{true}}"><div class="pgrid">
+<template data-sc="for" list="{{shown}}" as="p" hint-placeholder-count="8">
+<article class="pc pin" style="--i: {{p.i}}">
+<a class="pc-media" href="Product.dc.html" data-cursor="عرض" aria-label="عرض {{p.name}}">
+<div class="ph {{p.tone}} pc-a {{p.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{p.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{p.img}}" alt="{{p.name}}" loading="lazy"></template></div><template data-sc="if" value="{{p.noImg}}" hint-placeholder-val="{{true}}"><span class="ph-cap">{{p.shot}}</span></template></div>
+<template data-sc="if" value="{{p.showB}}" hint-placeholder-val="{{true}}"><div class="ph {{p.tone2}} pc-b {{p.img2Cls}}" aria-hidden="true"><div class="ph-in"><template data-sc="if" value="{{p.hasImg2}}" hint-placeholder-val="{{false}}"><img data-ref="{{p.img2}}" alt="" loading="lazy"></template></div><template data-sc="if" value="{{p.noImg2}}" hint-placeholder-val="{{true}}"><span class="ph-cap">زاوية بديلة — لقطة العبوة</span></template></div></template>
+<span class="pc-no">No. {{p.no}}</span><span class="pc-w">{{p.weight}}</span>
+</a>
+<div class="pc-body">
+<p class="pc-cat">{{p.catName}}</p>
+<h3 class="pc-name"><a href="Product.dc.html">{{p.name}}</a></h3>
+<p class="pc-desc">{{p.desc}}</p>
+<div class="pc-foot">
+<p class="price"><span class="price-n">{{p.priceS}}</span><span class="price-c">ج.م</span><span class="tag-s">سعر تجريبي</span></p>
+<button class="{{p.addCls}}" type="button" onClick="{{p.add}}" aria-label="أضف: {{p.name}}"><span class="add-a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>أضف</span><span class="add-b"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg>تمت الإضافة</span></button>
+</div>
+</div>
+</article>
+</template>
+</div></template>
+<template data-sc="if" value="{{isEmpty}}" hint-placeholder-val="{{false}}"><div class="empty"><p class="eyebrow"><b>0</b> / منتجات</p><h3 class="d-m">لا توجد منتجات مطابقة لبحثك.</h3><p class="body">جرّب كلمة أخرى، أو امسح عوامل التصفية لعرض التشكيلة كاملة.</p><button class="btn btn--navy" type="button" onClick="{{clearAll}}"><span class="btn-l">مسح التصفية</span></button></div></template>
+</div>
+</section>
+
+<section class="sec on-deep b2b" id="business">
+<div class="wrap">
+<div class="b2b-top"><p class="eyebrow" data-rv=""><b>٠٥</b> / للشركات</p><p class="b2b-sw" aria-hidden="true"><span>تجزئة</span><span class="on">جملة</span></p></div>
+<span class="b2b-line" data-rv="line"></span>
+<div class="b2b-g">
+<h2 class="d-xl lns" data-rv=""><span class="ln" style="--l: 0"><span>مصمَّمة للأعمال.</span></span><span class="ln" style="--l: 1"><span>جاهزة لإمداد</span></span><span class="ln" style="--l: 2"><span>يُعتمد عليه.</span></span></h2>
+<div class="b2b-media">
+<div class="ph ph--steel b2b-m1 zoom has-img" data-rv="img"><div class="ph-in"><img data-ref="img:b2b-supply-chicken" alt="دجاجة كاملة طازجة في منشأة دواجن حديثة" loading="lazy"></div></div>
+<div class="b2b-m2" data-px="0.06"><div class="ph ph--warm has-img" style="position: absolute; inset: 0" data-rv="img"><div class="ph-in"><img data-ref="img:b2b-truck" alt="شاحنة توصيل مبرّدة للأمين" loading="lazy" style="object-position: 45% 50%"></div></div></div>
+</div>
+</div>
+<div class="b2b-foot">
+<p class="lead" style="color: rgba(255,255,255,.88)" data-rv="">اكتشف حلول الإمداد المصممة للتجار والموزعين والمطاعم وشركات الأغذية.</p>
+<ul class="b2b-types"><li data-rv="" style="--i: 0">التجار<span>01</span></li><li data-rv="" style="--i: 1">الموزعون<span>02</span></li><li data-rv="" style="--i: 2">المطاعم<span>03</span></li><li data-rv="" style="--i: 3">شركات الأغذية<span>04</span></li></ul>
+<div class="ctas"><a class="btn btn--white" href="Wholesale.dc.html" data-mag=""><span class="btn-l">استكشف حلول الجملة<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a class="btn btn--ghost-inv" href="Wholesale.dc.html"><span class="btn-l">اطلب عرض سعر</span></a></div>
+</div>
+</div>
+</section>
+
+<section class="sec on-paper" id="journey">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>٠٦</b> / من المزرعة إلى مائدتك</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>من المزرعة</span></span><span class="ln" style="--l: 1"><span>إلى مائدتك.</span></span></h2></div><div class="sec-aside"><p class="body" data-rv="">خمس مراحل ومعيار واحد — تابع الرحلة التي يمر بها كل منتج قبل أن يصل إليك.</p><span class="note"><span class="ph-dot"></span>رحلة توضيحية · المراحل بانتظار التأكيد</span></div></div>
+<div class="jr">
+<div class="jr-media"><div class="jr-stick">
+<template data-sc="for" list="{{stages}}" as="s" hint-placeholder-count="5"><div class="ph jr-ph {{s.tone}} {{s.cls}} {{s.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{s.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{s.img}}" alt="{{s.title}}" loading="lazy"></template></div><template data-sc="if" value="{{s.noImg}}" hint-placeholder-val="{{true}}"><span class="ph-cap">{{s.shot}}</span></template></div></template>
+<div class="jr-hud"><span class="jr-count"><b>{{stageN}}</b> / 05</span><span class="jr-bar"><span style="transform: scaleX({{stageP}})"></span></span><span class="cap">{{stageName}}</span></div>
+</div></div>
+<ol class="jr-steps"><span class="jr-fill" style="height: {{fillH}}"></span>
+<template data-sc="for" list="{{stages}}" as="s" hint-placeholder-count="5">
+<li class="jr-step {{s.cls}}" data-step="{{s.idx}}"><button class="jr-dot" type="button" onClick="{{s.pick}}" aria-label="المرحلة {{s.n}}: {{s.title}}">{{s.n}}</button><div class="jr-txt"><p class="jr-k">المرحلة {{s.n}}</p><h3 class="d-m">{{s.title}}</h3><p class="body" style="max-width: 44ch">{{s.text}}</p><div class="ph jr-inline {{s.tone}} {{s.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{s.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{s.img}}" alt="{{s.title}}" loading="lazy"></template></div><template data-sc="if" value="{{s.noImg}}" hint-placeholder-val="{{true}}"><span class="ph-cap">{{s.shot}}</span></template></div></div></li>
+</template>
+</ol>
+</div>
+</div>
+</section>
+
+<section class="sec" id="quality">
+<div class="wrap q-g">
+<div class="q-media">
+<div class="ph ph--steel q1 has-img" data-rv="img"><div class="ph-in"><img data-ref="img:quality-inspection" alt="فحص جودة عبوة الأمين على خط الإنتاج" loading="lazy" style="object-position: 35% 30%"></div></div>
+<div class="q2" data-px="0.07"><div class="ph ph--ice has-img" style="position: absolute; inset: 0" data-rv="img"><div class="ph-in"><img data-ref="img:quality-eggs-line" alt="بيض الأمين الطازج على خط التعبئة" loading="lazy"></div></div></div>
+<div class="q3" data-px="-0.05"><div class="ph ph--red has-img" style="position: absolute; inset: 0" data-rv="img"><div class="ph-in"><img data-ref="img:quality-detail" alt="تفاصيل دجاجة طازجة" loading="lazy"></div></div></div>
+</div>
+<div class="q-txt">
+<p class="eyebrow" data-rv=""><b>٠٧</b> / معيارنا</p>
+<h2 class="d-xl lns" data-rv=""><span class="ln" style="--l: 0"><span>الجودة</span></span><span class="ln" style="--l: 1"><span>هي</span></span><span class="ln" style="--l: 2"><span>معيارنا.</span></span></h2>
+<p class="lead" data-rv="">الجودة ليست قسمًا، بل هي الطريقة التي تُنجز بها كل خطوة — وسبب عودة عملائنا.</p>
+<ol class="q-list"><li data-rv="" style="--i: 0"><span class="q-n">01</span><div><h3 class="d-s">الاهتمام بجودة المنتج</h3><p class="body">تظهر العناية في التفاصيل — في طريقة تجهيز كل منتج وتداوله وتقديمه.</p></div></li><li data-rv="" style="--i: 1"><span class="q-n">02</span><div><h3 class="d-s">معايير الإنتاج</h3><p class="body">أساليب عمل محددة تحافظ على ثبات كل دفعة.</p></div></li><li data-rv="" style="--i: 2"><span class="q-n">03</span><div><h3 class="d-s">فحص الجودة</h3><p class="body">تُفحص المنتجات قبل انتقالها، ليصل إليك ما يطابق المعيار.</p></div></li><li data-rv="" style="--i: 3"><span class="q-n">04</span><div><h3 class="d-s">تعبئة بعناية</h3><p class="body">محكمة الغلق ومُعلَّمة لتحافظ على الطزاجة وتُسهّل التخزين.</p></div></li></ol>
+<span class="note"><span class="ph-dot"></span>لا تُعرض أي شهادات قبل توفير المستندات الرسمية</span>
+</div>
+</div>
+</section>
+
+<section class="sec on-navy" id="voices">
+<div class="wrap">
+<div class="sec-head" style="align-items: center"><div><p class="eyebrow" data-rv=""><b>٠٨</b> / آراء العملاء</p></div><span class="note">تصميم تجريبي · بانتظار آراء موثّقة</span></div>
+<div class="tst-stage" aria-live="polite"><span class="tst-q" aria-hidden="true">“</span>
+<template data-sc="for" list="{{tst}}" as="x" hint-placeholder-count="3"><figure class="tst-s {{x.cls}}" aria-hidden="{{x.hidden}}"><blockquote class="tst-text">{{x.quote}}</blockquote><figcaption><b>{{x.who}}</b><span>{{x.role}}</span></figcaption></figure></template>
+</div>
+<div class="tst-ctl"><span class="tst-c">0{{tN}} / 03</span><span class="tst-bar"><span style="transform: scaleX({{tP}})"></span></span><button class="ibtn" type="button" onClick="{{tPrev}}" aria-label="السابق"><svg class="flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.9"></path></svg></button><button class="ibtn" type="button" onClick="{{tNext}}" aria-label="التالي"><svg class="flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.9"></path></svg></button></div>
+</div>
+</section>
+
+<section class="cta on-red" id="cta">
+<div class="wrap cta-g">
+<h2 class="d-xl lns" data-rv=""><span class="ln" style="--l: 0"><span>لنجعل الجودة</span></span><span class="ln" style="--l: 1"><span>جزءًا من</span></span><span class="ln" style="--l: 2"><span>كل مائدة.</span></span></h2>
+<div class="cta-side">
+<p class="lead" data-rv="">تسوّق لمنزلك، أو تحدّث مع فريقنا عن توريد احتياجات عملك.</p>
+<div class="ctas"><a class="btn btn--white" href="Products.dc.html" data-mag=""><span class="btn-l">تصفّح المنتجات<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a class="btn btn--ghost-inv" href="Contact.dc.html"><span class="btn-l">تواصل مع فريقنا</span></a><a class="btn btn--navy" href="Wholesale.dc.html"><span class="btn-l">استفسار للشركات</span></a></div>
+<p class="slogan" lang="en" dir="ltr">....the place to be....</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr-top">
+<div class="ftr-brand"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"><p class="body" style="max-width: 36ch">جودة يمكنك الوثوق بها، وطزاجة تشعر بها — للأفراد والشركات.</p></div>
+<div><h4>استكشف</h4><ul><li><a href="Home-AR.dc.html">الرئيسية</a></li><li><a href="About.dc.html">من نحن</a></li><li><a href="Products.dc.html">المنتجات</a></li><li><a href="Contact.dc.html">تواصل معنا</a></li><li><a href="Account.dc.html">حسابي</a></li></ul></div><div><h4>المنتجات</h4><ul><li><a href="Products.dc.html">دجاج كامل</a></li><li><a href="Products.dc.html">قطعيات طازجة</a></li><li><a href="Products.dc.html">منزوع العظم وفيليه</a></li><li><a href="Products.dc.html">جاهز للطهي</a></li></ul></div><div><h4>للشركات</h4><ul><li><a href="Wholesale.dc.html">حلول الجملة</a></li><li><a href="Wholesale.dc.html">طلب عرض سعر</a></li><li><a href="Wholesale.dc.html">المطاعم والتموين</a></li><li><a href="Wholesale.dc.html">الموزعون والتجار</a></li></ul></div>
+<div><h4>تواصل</h4><ul><li class="ftr-ph">[رقم الهاتف]</li><li class="ftr-ph">[البريد الإلكتروني]</li><li class="ftr-ph">[العنوان — بانتظار التأكيد]</li></ul><h4 style="margin-top: 32px">تابعنا</h4><div class="socials"><a href="#" aria-label="Facebook — link to confirm">Facebook</a><a href="#" aria-label="Instagram — link to confirm">Instagram</a><a href="#" aria-label="LinkedIn — link to confirm">LinkedIn</a><a href="#" aria-label="WhatsApp — link to confirm">WhatsApp</a></div></div>
+</div>
+<p class="ftr-slogan" lang="en" dir="ltr" data-rv="mask"><span>....</span>the place to be<span>....</span></p>
+<div class="ftr-bot"><span>© ٢٠٢٦ الأمين للإنتاج الداجني. جميع الحقوق محفوظة.</span><span>بيانات التواصل والحسابات الاجتماعية بانتظار التأكيد من الشركة</span></div>
+</div>
+</footer>
+<template data-sc="if" value="{{hasToast}}" hint-placeholder-val="{{false}}">
+<div class="toast" role="status" aria-live="polite"><span class="toast-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg></span><p><b>أُضيف إلى السلة</b>{{toastName}}</p><a class="btn btn--white btn--sm" href="Cart.dc.html"><span class="btn-l">عرض السلة</span></a></div>
+</template>
+<p class="proto"><span class="ph-dot"></span>نموذج تصميم — المحتوى والأسعار للعرض فقط</p>
+<div class="cur" aria-hidden="true"><div class="cur-ring"></div><div class="cur-dot"></div></div>
+</div>
+</template>
+<template id="tpl-About">
+
+<div class="aa" lang="en">
+<div class="pt" aria-hidden="true"></div>
+<header class="hdr" data-solid="0">
+<div class="hdr-in">
+<a class="logo-tab" href="Home.dc.html" aria-label="AL AMIN for Poultry Production — home" data-cursor="HOME"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"></a>
+<nav class="nav" aria-label="Primary"><a class="nav-a" href="Home.dc.html">Home</a><a class="nav-a" href="About.dc.html" aria-current="page">About</a><a class="nav-a" href="Products.dc.html">Products</a><a class="nav-a" href="Wholesale.dc.html">Wholesale</a><a class="nav-a" href="Contact.dc.html">Contact</a></nav>
+<div class="tools">
+<a class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a>
+<a class="tool hide-m" href="Account.dc.html" aria-label="My account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="M4.5 20c1.2-3.8 4-5.6 7.5-5.6s6.3 1.8 7.5 5.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg></a>
+<a class="tool" href="Cart.dc.html" aria-label="Cart, {{cart}} items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8zM9 8V6.5a3 3 0 016 0V8" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg><span class="badge {{bumpCls}}">{{cart}}</span></a>
+<button class="tool burger" type="button" onClick="{{toggleMenu}}" aria-label="Open menu" aria-expanded="{{menuStr}}"><i></i></button>
+</div>
+</div>
+<span class="hdr-bar" aria-hidden="true"></span>
+</header>
+<template data-sc="if" value="{{menuOpen}}" hint-placeholder-val="{{false}}">
+<div class="mm" role="dialog" aria-modal="true" aria-label="Menu">
+<div class="mm-top"><img data-ref="img:logo" alt="AL AMIN"><button class="ibtn" type="button" style="border-color: rgba(255,255,255,.3); color: #fff" onClick="{{closeMenu}}" aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2"></path></svg></button></div>
+<nav class="mm-nav" aria-label="Mobile"><a class="mm-a" href="Home.dc.html" style="--i: 0" onClick="{{closeMenu}}">Home<small>01</small></a><a class="mm-a" href="About.dc.html" style="--i: 1" onClick="{{closeMenu}}">About<small>02</small></a><a class="mm-a" href="Products.dc.html" style="--i: 2" onClick="{{closeMenu}}">Products<small>03</small></a><a class="mm-a" href="Wholesale.dc.html" style="--i: 3" onClick="{{closeMenu}}">Wholesale<small>04</small></a><a class="mm-a" href="Contact.dc.html" style="--i: 4" onClick="{{closeMenu}}">Contact<small>05</small></a><a class="mm-a" href="Account.dc.html" style="--i: 5" onClick="{{closeMenu}}">Account<small>06</small></a><a class="mm-a" href="Cart.dc.html" style="--i: 6" onClick="{{closeMenu}}">Cart<small>07</small></a></nav>
+<div class="mm-foot"><a class="btn btn--red btn--block" href="Wholesale.dc.html"><span class="btn-l">Business inquiry<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a style="color: #fff; align-self: flex-start" class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a><p class="slogan" style="font-size: 20px">....the place to be....</p></div>
+</div>
+</template>
+<main>
+<section class="phero">
+<div class="phero-media"><div class="ph ph--steel has-img"><div class="ph-in"><img data-ref="img:about-hero-farm" alt="Modern poultry house with healthy flock" loading="lazy" style="object-position: 50% 50%"></div></div><div class="hero-scrim"></div></div>
+<div class="wrap phero-in">
+<nav class="crumbs fu" aria-label="Breadcrumb" style="--i: 0"><a href="Home.dc.html">Home</a><i></i><span aria-current="page">About Us</span></nav>
+<p class="eyebrow fu" style="--i: 1"><b>About</b> / AL AMIN</p>
+<h1 class="d-xl" style="max-width: 12ch"><span class="ln"><span style="--i: 0">A name built</span></span><span class="ln"><span style="--i: 1">on trust.</span></span></h1>
+<p class="lead fu" style="--i: 3">AL AMIN for Poultry Production — focused on quality poultry products and dependable service for homes and businesses.</p>
+
+</div>
+</section>
+<section class="sec">
+<div class="wrap ab-intro">
+<p class="eyebrow"><b>01</b> / Who we are</p>
+<div>
+<p class="ab-big" data-rv="">In Arabic, <em>Al Amin</em> means “the trustworthy one”. We treat our name as a standard to live up to — in the quality of every product and the way we serve every customer.</p>
+<p class="ph-text" data-rv="">[Company introduction — 2–3 sentences supplied by AL AMIN: who you are, where you operate, and what you produce.]</p>
+</div>
+</div>
+</section>
+<section class="sec on-paper">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>02</b> / Our story</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>Where it</span></span><span class="ln" style="--l: 1"><span>all began.</span></span></h2></div><div class="sec-aside"><span class="note"><span class="ph-dot"></span>Milestones to be supplied by AL AMIN</span></div></div>
+<div class="story">
+<div data-rv="" style="--i: 0"><span class="story-y">[YYYY]</span><h3 class="d-s">[Founding milestone]</h3><p class="body">[How AL AMIN started — founders, first operation, original purpose.]</p></div>
+<div data-rv="" style="--i: 1"><span class="story-y">[YYYY]</span><h3 class="d-s">[Growth milestone]</h3><p class="body">[A key expansion, new product line or new market.]</p></div>
+<div data-rv="" style="--i: 2"><span class="story-y">[YYYY]</span><h3 class="d-s">[Today]</h3><p class="body">[Where the company stands today, in the company’s own words.]</p></div>
+</div>
+</div>
+</section>
+<section class="sec on-navy">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>03</b> / Our values</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>What we</span></span><span class="ln" style="--l: 1"><span>stand for.</span></span></h2></div><span class="note">Values · to be approved by AL AMIN</span></div>
+<div class="vals"><div class="val" data-rv="" style="--i: 0"><span class="val-n">01</span><h3 class="val-w">Trust</h3><p class="body">Our name means “the trustworthy one”. Everything we do should prove it.</p></div><div class="val" data-rv="" style="--i: 1"><span class="val-n">02</span><h3 class="val-w">Quality</h3><p class="body">A standard applied to every product, every batch, every order.</p></div><div class="val" data-rv="" style="--i: 0"><span class="val-n">03</span><h3 class="val-w">Reliability</h3><p class="body">Being there for the family table and the busy kitchen alike.</p></div><div class="val" data-rv="" style="--i: 1"><span class="val-n">04</span><h3 class="val-w">Care</h3><p class="body">For the products we handle and the people we serve.</p></div><div class="val" data-rv="" style="--i: 0"><span class="val-n">05</span><h3 class="val-w">Service</h3><p class="body">Clear, responsive, and easy to work with — for homes and businesses.</p></div></div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>04</b> / Production overview</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>Care at</span></span><span class="ln" style="--l: 1"><span>every stage.</span></span></h2></div><div class="sec-aside"><p class="body" data-rv="">From the farm to the final pack, each stage is an opportunity to protect quality.</p><span class="note"><span class="ph-dot"></span>Illustrative imagery · replace with real facility photography</span></div></div>
+<div class="prod3">
+<figure data-rv="img"><div class="ph ph--field zoom has-img" style="aspect-ratio: 4/5"><div class="ph-in"><img data-ref="img:about-farm" alt="Healthy hen in a modern poultry house" loading="lazy"></div></div><figcaption><b>01</b>Farm</figcaption></figure>
+<figure data-rv="img" style="--i: 1"><div class="ph ph--steel zoom has-img" style="aspect-ratio: 4/4.4"><div class="ph-in"><img data-ref="img:about-production" alt="Processing and packing line" loading="lazy"></div></div><figcaption><b>02</b>Production</figcaption></figure>
+<figure data-rv="img" style="--i: 2"><div class="ph ph--ice zoom has-img" style="aspect-ratio: 4/3.6"><div class="ph-in"><img data-ref="img:eggs-about" alt="AL AMIN Fresh Eggs carton with navy sleeve" loading="lazy"></div></div><figcaption><b>03</b>Packaging</figcaption></figure>
+</div>
+</div>
+</section>
+<section class="sec on-paper">
+<div class="wrap qband">
+<div class="ph ph--warm has-img" style="aspect-ratio: 5/4" data-rv="img"><div class="ph-in"><img data-ref="img:about-quality-check" alt="Team member checking an AL AMIN pack" loading="lazy" style="object-position: 40% 40%"></div></div>
+<div style="display: flex; flex-direction: column; gap: 26px">
+<p class="eyebrow" data-rv=""><b>05</b> / Quality commitment</p>
+<h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>Quality is</span></span><span class="ln" style="--l: 1"><span>our standard.</span></span></h2>
+<p class="lead" data-rv="">We hold every product to one standard — the one we would set for our own table. That commitment shapes how we handle, check and pack everything that carries our name.</p>
+<span class="note"><span class="ph-dot"></span>Certifications shown only once documentation is supplied</span>
+</div>
+</div>
+</section>
+<section class="cta on-red">
+<div class="wrap cta-g">
+<h2 class="d-xl lns" data-rv=""><span class="ln" style="--l: 0"><span>Taste the</span></span><span class="ln" style="--l: 1"><span>difference</span></span><span class="ln" style="--l: 2"><span>trust makes.</span></span></h2>
+<div class="cta-side"><p class="lead" data-rv="">Explore the range for your home, or talk to us about supplying your business.</p><div class="ctas"><a class="btn btn--white" href="Products.dc.html" data-mag=""><span class="btn-l">Explore Products<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a class="btn btn--ghost-inv" href="Wholesale.dc.html"><span class="btn-l">Business Inquiry</span></a></div><p class="slogan" lang="en" dir="ltr">....the place to be....</p></div>
+</div>
+</section>
+</main>
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr-top">
+<div class="ftr-brand"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"><p class="body" style="max-width: 36ch">Quality you can trust. Freshness you can feel. For homes and for businesses.</p></div>
+<div><h4>Explore</h4><ul><li><a href="Home.dc.html">Home</a></li><li><a href="About.dc.html">About Us</a></li><li><a href="Products.dc.html">Products</a></li><li><a href="Contact.dc.html">Contact</a></li><li><a href="Account.dc.html">My Account</a></li></ul></div><div><h4>Products</h4><ul><li><a href="Products.dc.html">Whole Birds</a></li><li><a href="Products.dc.html">Fresh Cuts</a></li><li><a href="Products.dc.html">Boneless &amp; Fillets</a></li><li><a href="Products.dc.html">Ready to Cook</a></li></ul></div><div><h4>Business</h4><ul><li><a href="Wholesale.dc.html">Wholesale Solutions</a></li><li><a href="Wholesale.dc.html">Request a Quotation</a></li><li><a href="Wholesale.dc.html">Restaurants &amp; Catering</a></li><li><a href="Wholesale.dc.html">Distributors &amp; Traders</a></li></ul></div>
+<div><h4>Contact</h4><ul><li class="ftr-ph">[Phone number]</li><li class="ftr-ph">[Email address]</li><li class="ftr-ph">[Address — awaiting confirmation]</li></ul><h4 style="margin-top: 32px">Follow</h4><div class="socials"><a href="#" aria-label="Facebook — link to confirm">Facebook</a><a href="#" aria-label="Instagram — link to confirm">Instagram</a><a href="#" aria-label="LinkedIn — link to confirm">LinkedIn</a><a href="#" aria-label="WhatsApp — link to confirm">WhatsApp</a></div></div>
+</div>
+<p class="ftr-slogan" lang="en" dir="ltr" data-rv="mask"><span>....</span>the place to be<span>....</span></p>
+<div class="ftr-bot"><span>© 2026 AL AMIN for Poultry Production. All rights reserved.</span><span>Contact details &amp; social accounts awaiting company confirmation</span></div>
+</div>
+</footer>
+<template data-sc="if" value="{{hasToast}}" hint-placeholder-val="{{false}}">
+<div class="toast" role="status" aria-live="polite"><span class="toast-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg></span><p><b>Added to cart</b>{{toastName}}</p><a class="btn btn--white btn--sm" href="Cart.dc.html"><span class="btn-l">View cart</span></a></div>
+</template>
+<p class="proto"><span class="ph-dot"></span>Design prototype · sample content &amp; prices</p>
+<div class="cur" aria-hidden="true"><div class="cur-ring"></div><div class="cur-dot"></div></div>
+</div>
+</template>
+<template id="tpl-Products">
+
+<div class="aa" lang="en">
+<div class="pt" aria-hidden="true"></div>
+<header class="hdr" data-solid="0">
+<div class="hdr-in">
+<a class="logo-tab" href="Home.dc.html" aria-label="AL AMIN for Poultry Production — home" data-cursor="HOME"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"></a>
+<nav class="nav" aria-label="Primary"><a class="nav-a" href="Home.dc.html">Home</a><a class="nav-a" href="About.dc.html">About</a><a class="nav-a" href="Products.dc.html" aria-current="page">Products</a><a class="nav-a" href="Wholesale.dc.html">Wholesale</a><a class="nav-a" href="Contact.dc.html">Contact</a></nav>
+<div class="tools">
+<a class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a>
+<a class="tool hide-m" href="Account.dc.html" aria-label="My account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="M4.5 20c1.2-3.8 4-5.6 7.5-5.6s6.3 1.8 7.5 5.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg></a>
+<a class="tool" href="Cart.dc.html" aria-label="Cart, {{cart}} items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8zM9 8V6.5a3 3 0 016 0V8" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg><span class="badge {{bumpCls}}">{{cart}}</span></a>
+<button class="tool burger" type="button" onClick="{{toggleMenu}}" aria-label="Open menu" aria-expanded="{{menuStr}}"><i></i></button>
+</div>
+</div>
+<span class="hdr-bar" aria-hidden="true"></span>
+</header>
+<template data-sc="if" value="{{menuOpen}}" hint-placeholder-val="{{false}}">
+<div class="mm" role="dialog" aria-modal="true" aria-label="Menu">
+<div class="mm-top"><img data-ref="img:logo" alt="AL AMIN"><button class="ibtn" type="button" style="border-color: rgba(255,255,255,.3); color: #fff" onClick="{{closeMenu}}" aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2"></path></svg></button></div>
+<nav class="mm-nav" aria-label="Mobile"><a class="mm-a" href="Home.dc.html" style="--i: 0" onClick="{{closeMenu}}">Home<small>01</small></a><a class="mm-a" href="About.dc.html" style="--i: 1" onClick="{{closeMenu}}">About<small>02</small></a><a class="mm-a" href="Products.dc.html" style="--i: 2" onClick="{{closeMenu}}">Products<small>03</small></a><a class="mm-a" href="Wholesale.dc.html" style="--i: 3" onClick="{{closeMenu}}">Wholesale<small>04</small></a><a class="mm-a" href="Contact.dc.html" style="--i: 4" onClick="{{closeMenu}}">Contact<small>05</small></a><a class="mm-a" href="Account.dc.html" style="--i: 5" onClick="{{closeMenu}}">Account<small>06</small></a><a class="mm-a" href="Cart.dc.html" style="--i: 6" onClick="{{closeMenu}}">Cart<small>07</small></a></nav>
+<div class="mm-foot"><a class="btn btn--red btn--block" href="Wholesale.dc.html"><span class="btn-l">Business inquiry<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a style="color: #fff; align-self: flex-start" class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a><p class="slogan" style="font-size: 20px">....the place to be....</p></div>
+</div>
+</template>
+<main>
+<section class="phero">
+<div class="phero-media"><div class="ph ph--warm has-img"><div class="ph-in"><img data-ref="img:products-hero" alt="AL AMIN Fresh Local Chicken pack with eggs" loading="lazy" style="object-position: 50% 40%"></div></div><div class="hero-scrim"></div></div>
+<div class="wrap phero-in">
+<nav class="crumbs fu" aria-label="Breadcrumb" style="--i: 0"><a href="Home.dc.html">Home</a><i></i><span aria-current="page">Products</span></nav>
+<p class="eyebrow fu" style="--i: 1"><b>Shop</b> / Retail</p>
+<h1 class="d-xl" style="max-width: 12ch"><span class="ln"><span style="--i: 0">Our</span></span><span class="ln"><span style="--i: 1">products.</span></span></h1>
+<p class="lead fu" style="--i: 3">Fresh poultry for your home — browse the range, choose your cuts, and order for delivery.</p>
+
+</div>
+</section>
+<section class="sec" style="padding-top: 56px">
+<div class="wrap">
+<div class="cat-tabs" role="tablist" aria-label="Product categories"><template data-sc="for" list="{{tabs}}" as="c" hint-placeholder-count="5"><button class="cat-tab" type="button" role="tab" aria-selected="{{c.sel}}" onClick="{{c.pick}}">{{c.name}}</button></template></div>
+<div class="pl">
+<aside class="flt" aria-label="Filters"><div class="flt-g"><h3>Category</h3><label class="chk"><input type="checkbox" checked="{{fc_whole}}" onChange="{{tc_whole}}">Whole Birds<em>{{n_whole}}</em></label><label class="chk"><input type="checkbox" checked="{{fc_cuts}}" onChange="{{tc_cuts}}">Fresh Cuts<em>{{n_cuts}}</em></label><label class="chk"><input type="checkbox" checked="{{fc_boneless}}" onChange="{{tc_boneless}}">Boneless &amp; Fillets<em>{{n_boneless}}</em></label><label class="chk"><input type="checkbox" checked="{{fc_ready}}" onChange="{{tc_ready}}">Ready to Cook<em>{{n_ready}}</em></label></div><div class="flt-g"><h3>Pack size</h3><label class="chk"><input type="checkbox" checked="{{fs_500}}" onChange="{{ts_500}}">500 g pack</label><label class="chk"><input type="checkbox" checked="{{fs_1kg}}" onChange="{{ts_1kg}}">1 kg tray</label><label class="chk"><input type="checkbox" checked="{{fs_whole}}" onChange="{{ts_whole}}">Whole bird</label></div><div class="flt-g"><h3>Price <span style="font-weight: 600; letter-spacing: .1em; color: var(--red)">· sample</span></h3><label class="chk"><input type="radio" name="d-pr" checked="{{fp_any}}" onChange="{{tp_any}}">Any price</label><label class="chk"><input type="radio" name="d-pr" checked="{{fp_lt150}}" onChange="{{tp_lt150}}">Under 150 EGP</label><label class="chk"><input type="radio" name="d-pr" checked="{{fp_150}}" onChange="{{tp_150}}">150 – 200 EGP</label><label class="chk"><input type="radio" name="d-pr" checked="{{fp_gt200}}" onChange="{{tp_gt200}}">Over 200 EGP</label></div><button class="tlink" type="button" onClick="{{clearAll}}" style="background: none; border: 0; cursor: pointer; align-self: flex-start">Clear all filters</button></aside>
+<div>
+<div class="pl-top">
+<div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle><path d="M15.5 15.5L21 21" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg><label class="vh" for="pq">Search products</label><input id="pq" class="inp" type="search" placeholder="Search products" value="{{q}}" onChange="{{setQ}}"></div>
+<button class="btn btn--ghost fbtn" type="button" onClick="{{openF}}"><span class="btn-l"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8" fill="none" stroke="currentColor" stroke-width="1.8"></path><circle cx="16" cy="7" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"></circle><circle cx="10" cy="17" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"></circle></svg>Filters ({{activeN}})</span></button>
+<div class="field sort"><label class="vh" for="ps">Sort products</label><select id="ps" class="inp" value="{{sort}}" onChange="{{setSort}}"><option value="featured">Sort: Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name: A–Z</option></select></div>
+</div>
+<div class="res cap" aria-live="polite"><span>Showing {{shownN}} of {{totalN}} products</span><span class="tag-s" style="margin: 0">Sample prices &amp; specs</span></div>
+<template data-sc="if" value="{{loading}}" hint-placeholder-val="{{false}}"><div class="pgrid" aria-busy="true"><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div><div class="skc"><div class="sk"></div><div class="sk skl" style="width: 40%"></div><div class="sk skl" style="width: 75%; height: 20px"></div><div class="sk skl" style="width: 60%; margin-bottom: 24px"></div></div></div></template>
+<template data-sc="if" value="{{showGrid}}" hint-placeholder-val="{{true}}"><div class="pgrid">
+<template data-sc="for" list="{{shown}}" as="p" hint-placeholder-count="6">
+<article class="pc pin" style="--i: {{p.i}}">
+<a class="pc-media" href="Product.dc.html" data-cursor="VIEW" aria-label="View {{p.name}}">
+<div class="ph {{p.tone}} pc-a {{p.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{p.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{p.img}}" alt="{{p.name}}" loading="lazy"></template></div><template data-sc="if" value="{{p.noImg}}" hint-placeholder-val="{{true}}"><span class="ph-cap">{{p.shot}}</span></template></div>
+<template data-sc="if" value="{{p.showB}}" hint-placeholder-val="{{true}}"><div class="ph {{p.tone2}} pc-b {{p.img2Cls}}" aria-hidden="true"><div class="ph-in"><template data-sc="if" value="{{p.hasImg2}}" hint-placeholder-val="{{false}}"><img data-ref="{{p.img2}}" alt="" loading="lazy"></template></div><template data-sc="if" value="{{p.noImg2}}" hint-placeholder-val="{{true}}"><span class="ph-cap">Alt angle — pack shot</span></template></div></template>
+<span class="pc-no">No. {{p.no}}</span><span class="pc-w">{{p.weight}}</span>
+</a>
+<div class="pc-body">
+<p class="pc-cat">{{p.catName}}</p>
+<h3 class="pc-name"><a href="Product.dc.html">{{p.name}}</a></h3>
+<p class="pc-desc">{{p.desc}}</p>
+<div class="pc-foot">
+<p class="price"><span class="price-n">{{p.priceS}}</span><span class="price-c">EGP</span><span class="tag-s">Sample price</span></p>
+<button class="{{p.addCls}}" type="button" onClick="{{p.add}}" aria-label="Add: {{p.name}}"><span class="add-a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>Add</span><span class="add-b"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg>Added</span></button>
+</div>
+</div>
+</article>
+</template>
+</div></template>
+<template data-sc="if" value="{{isEmpty}}" hint-placeholder-val="{{false}}"><div class="empty"><p class="eyebrow"><b>0</b> / results</p><h3 class="d-m">No products match your filters.</h3><p class="body">Try removing a filter or searching for something else.</p><button class="btn btn--navy" type="button" onClick="{{clearAll}}"><span class="btn-l">Clear filters</span></button></div></template>
+<template data-sc="if" value="{{hasMore}}" hint-placeholder-val="{{true}}"><div class="more"><span class="cap">{{shownN}} of {{totalN}}</span><span class="more-bar"><span style="transform: scaleX({{moreP}})"></span></span><button class="btn btn--ghost" type="button" data-state="{{moreState}}" onClick="{{loadMore}}"><span class="btn-l">Load more</span></button></div></template>
+<div class="b2b-nudge on-navy"><div style="display: flex; flex-direction: column; gap: 8px"><p class="eyebrow"><b>B2B</b> / Buying for a business?</p><p class="d-s">Get wholesale pricing and packaging for your volume.</p></div><a class="btn btn--white" href="Wholesale.dc.html" data-mag=""><span class="btn-l">Request a quotation<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a></div>
+</div>
+</div>
+</div>
+</section>
+<template data-sc="if" value="{{fOpen}}" hint-placeholder-val="{{false}}">
+<div class="drawer" role="dialog" aria-modal="true" aria-label="Filters"><div class="drawer-p">
+<div class="drawer-h"><p class="eyebrow"><b>{{activeN}}</b> / Filters</p><button class="ibtn" type="button" onClick="{{closeF}}" aria-label="Close filters"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2"></path></svg></button></div>
+<div class="drawer-b"><div class="flt-g"><h3>Category</h3><label class="chk"><input type="checkbox" checked="{{fc_whole}}" onChange="{{tc_whole}}">Whole Birds<em>{{n_whole}}</em></label><label class="chk"><input type="checkbox" checked="{{fc_cuts}}" onChange="{{tc_cuts}}">Fresh Cuts<em>{{n_cuts}}</em></label><label class="chk"><input type="checkbox" checked="{{fc_boneless}}" onChange="{{tc_boneless}}">Boneless &amp; Fillets<em>{{n_boneless}}</em></label><label class="chk"><input type="checkbox" checked="{{fc_ready}}" onChange="{{tc_ready}}">Ready to Cook<em>{{n_ready}}</em></label></div><div class="flt-g"><h3>Pack size</h3><label class="chk"><input type="checkbox" checked="{{fs_500}}" onChange="{{ts_500}}">500 g pack</label><label class="chk"><input type="checkbox" checked="{{fs_1kg}}" onChange="{{ts_1kg}}">1 kg tray</label><label class="chk"><input type="checkbox" checked="{{fs_whole}}" onChange="{{ts_whole}}">Whole bird</label></div><div class="flt-g"><h3>Price <span style="font-weight: 600; letter-spacing: .1em; color: var(--red)">· sample</span></h3><label class="chk"><input type="radio" name="m-pr" checked="{{fp_any}}" onChange="{{tp_any}}">Any price</label><label class="chk"><input type="radio" name="m-pr" checked="{{fp_lt150}}" onChange="{{tp_lt150}}">Under 150 EGP</label><label class="chk"><input type="radio" name="m-pr" checked="{{fp_150}}" onChange="{{tp_150}}">150 – 200 EGP</label><label class="chk"><input type="radio" name="m-pr" checked="{{fp_gt200}}" onChange="{{tp_gt200}}">Over 200 EGP</label></div></div>
+<div class="drawer-f"><button class="btn btn--ghost" type="button" onClick="{{clearAll}}" style="flex: 1"><span class="btn-l">Clear</span></button><button class="btn" type="button" onClick="{{closeF}}" style="flex: 1.4"><span class="btn-l">Show {{totalN}} results</span></button></div>
+</div></div>
+</template>
+</main>
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr-top">
+<div class="ftr-brand"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"><p class="body" style="max-width: 36ch">Quality you can trust. Freshness you can feel. For homes and for businesses.</p></div>
+<div><h4>Explore</h4><ul><li><a href="Home.dc.html">Home</a></li><li><a href="About.dc.html">About Us</a></li><li><a href="Products.dc.html">Products</a></li><li><a href="Contact.dc.html">Contact</a></li><li><a href="Account.dc.html">My Account</a></li></ul></div><div><h4>Products</h4><ul><li><a href="Products.dc.html">Whole Birds</a></li><li><a href="Products.dc.html">Fresh Cuts</a></li><li><a href="Products.dc.html">Boneless &amp; Fillets</a></li><li><a href="Products.dc.html">Ready to Cook</a></li></ul></div><div><h4>Business</h4><ul><li><a href="Wholesale.dc.html">Wholesale Solutions</a></li><li><a href="Wholesale.dc.html">Request a Quotation</a></li><li><a href="Wholesale.dc.html">Restaurants &amp; Catering</a></li><li><a href="Wholesale.dc.html">Distributors &amp; Traders</a></li></ul></div>
+<div><h4>Contact</h4><ul><li class="ftr-ph">[Phone number]</li><li class="ftr-ph">[Email address]</li><li class="ftr-ph">[Address — awaiting confirmation]</li></ul><h4 style="margin-top: 32px">Follow</h4><div class="socials"><a href="#" aria-label="Facebook — link to confirm">Facebook</a><a href="#" aria-label="Instagram — link to confirm">Instagram</a><a href="#" aria-label="LinkedIn — link to confirm">LinkedIn</a><a href="#" aria-label="WhatsApp — link to confirm">WhatsApp</a></div></div>
+</div>
+<p class="ftr-slogan" lang="en" dir="ltr" data-rv="mask"><span>....</span>the place to be<span>....</span></p>
+<div class="ftr-bot"><span>© 2026 AL AMIN for Poultry Production. All rights reserved.</span><span>Contact details &amp; social accounts awaiting company confirmation</span></div>
+</div>
+</footer>
+<template data-sc="if" value="{{hasToast}}" hint-placeholder-val="{{false}}">
+<div class="toast" role="status" aria-live="polite"><span class="toast-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg></span><p><b>Added to cart</b>{{toastName}}</p><a class="btn btn--white btn--sm" href="Cart.dc.html"><span class="btn-l">View cart</span></a></div>
+</template>
+<p class="proto"><span class="ph-dot"></span>Design prototype · sample content &amp; prices</p>
+<div class="cur" aria-hidden="true"><div class="cur-ring"></div><div class="cur-dot"></div></div>
+</div>
+</template>
+<template id="tpl-Product">
+
+<div class="aa" lang="en">
+<div class="pt" aria-hidden="true"></div>
+<header class="hdr" data-solid="1" data-force="">
+<div class="hdr-in">
+<a class="logo-tab" href="Home.dc.html" aria-label="AL AMIN for Poultry Production — home" data-cursor="HOME"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"></a>
+<nav class="nav" aria-label="Primary"><a class="nav-a" href="Home.dc.html">Home</a><a class="nav-a" href="About.dc.html">About</a><a class="nav-a" href="Products.dc.html" aria-current="page">Products</a><a class="nav-a" href="Wholesale.dc.html">Wholesale</a><a class="nav-a" href="Contact.dc.html">Contact</a></nav>
+<div class="tools">
+<a class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a>
+<a class="tool hide-m" href="Account.dc.html" aria-label="My account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="M4.5 20c1.2-3.8 4-5.6 7.5-5.6s6.3 1.8 7.5 5.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg></a>
+<a class="tool" href="Cart.dc.html" aria-label="Cart, {{cart}} items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8zM9 8V6.5a3 3 0 016 0V8" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg><span class="badge {{bumpCls}}">{{cart}}</span></a>
+<button class="tool burger" type="button" onClick="{{toggleMenu}}" aria-label="Open menu" aria-expanded="{{menuStr}}"><i></i></button>
+</div>
+</div>
+<span class="hdr-bar" aria-hidden="true"></span>
+</header>
+<template data-sc="if" value="{{menuOpen}}" hint-placeholder-val="{{false}}">
+<div class="mm" role="dialog" aria-modal="true" aria-label="Menu">
+<div class="mm-top"><img data-ref="img:logo" alt="AL AMIN"><button class="ibtn" type="button" style="border-color: rgba(255,255,255,.3); color: #fff" onClick="{{closeMenu}}" aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2"></path></svg></button></div>
+<nav class="mm-nav" aria-label="Mobile"><a class="mm-a" href="Home.dc.html" style="--i: 0" onClick="{{closeMenu}}">Home<small>01</small></a><a class="mm-a" href="About.dc.html" style="--i: 1" onClick="{{closeMenu}}">About<small>02</small></a><a class="mm-a" href="Products.dc.html" style="--i: 2" onClick="{{closeMenu}}">Products<small>03</small></a><a class="mm-a" href="Wholesale.dc.html" style="--i: 3" onClick="{{closeMenu}}">Wholesale<small>04</small></a><a class="mm-a" href="Contact.dc.html" style="--i: 4" onClick="{{closeMenu}}">Contact<small>05</small></a><a class="mm-a" href="Account.dc.html" style="--i: 5" onClick="{{closeMenu}}">Account<small>06</small></a><a class="mm-a" href="Cart.dc.html" style="--i: 6" onClick="{{closeMenu}}">Cart<small>07</small></a></nav>
+<div class="mm-foot"><a class="btn btn--red btn--block" href="Wholesale.dc.html"><span class="btn-l">Business inquiry<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a style="color: #fff; align-self: flex-start" class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a><p class="slogan" style="font-size: 20px">....the place to be....</p></div>
+</div>
+</template>
+<main>
+<section class="lite-top">
+<div class="wrap">
+<div style="padding-block: 28px 36px"><nav class="crumbs fu" aria-label="Breadcrumb" style="--i: 0"><a href="Home.dc.html">Home</a><i></i><a href="Products.dc.html">Products</a><i></i><a href="Products.dc.html">Boneless &amp; Fillets</a><i></i><span aria-current="page">Chicken Breast Fillets</span></nav></div>
+<div class="pd">
+<div class="gal">
+<div class="gal-thumbs" role="group" aria-label="Product images">
+<template data-sc="for" list="{{imgs}}" as="g" hint-placeholder-count="4"><button class="gal-t" type="button" aria-pressed="{{g.pressed}}" onClick="{{g.pick}}" aria-label="Image {{g.n}}"><div class="ph {{g.tone}} {{g.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{g.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{g.img}}" alt=""></template></div></div></button></template>
+</div>
+<div class="gal-main" data-cursor="ZOOM">
+<template data-sc="for" list="{{imgs}}" as="g" hint-placeholder-count="4"><div class="ph {{g.tone}} {{g.cls}} {{g.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{g.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{g.img}}" alt="Chicken Breast Fillets" loading="lazy"></template></div><template data-sc="if" value="{{g.noImg}}" hint-placeholder-val="{{true}}"><span class="ph-cap">{{g.shot}}</span></template></div></template>
+<span class="gal-c">0{{imgN}} / 04</span>
+<div class="gal-nav"><button class="ibtn" type="button" onClick="{{gPrev}}" aria-label="Previous image"><svg class="flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.9"></path></svg></button><button class="ibtn" type="button" onClick="{{gNext}}" aria-label="Next image"><svg class="flip" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.9"></path></svg></button></div>
+</div>
+</div>
+<div class="pd-info sticky">
+<p class="pc-cat" style="font-size: 12px">Boneless &amp; Fillets · No. 02</p>
+<h1 class="d-l" style="text-transform: none; letter-spacing: -.03em">Chicken Breast Fillets</h1>
+<p class="lead" style="color: var(--mute)">Lean, skinless fillets trimmed for everyday cooking — grill, bake, sear or slice.</p>
+<div class="pd-price"><b>{{priceS}}</b><span>EGP · {{sizeLabel}}</span><span class="tag-s" style="margin: 0">Sample price</span></div>
+<div class="field"><span class="flabel">Pack size</span><div class="chips"><template data-sc="for" list="{{sizes}}" as="z" hint-placeholder-count="3"><button class="chip" type="button" aria-pressed="{{z.pressed}}" onClick="{{z.pick}}">{{z.label}}</button></template></div></div>
+<div class="field"><span class="flabel">Quantity</span>
+<div class="pd-buy">
+<div class="qty" role="group" aria-label="Quantity"><button type="button" onClick="{{dec}}" disabled="{{decDis}}" aria-label="Decrease quantity"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg></button><output aria-live="polite"><span class="{{qCls}}">{{qty}}</span></output><button type="button" onClick="{{inc}}" aria-label="Increase quantity"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg></button></div>
+<button class="btn" type="button" data-state="{{addState}}" onClick="{{addNow}}"><span class="btn-l">{{addLabel}}</span></button>
+</div></div>
+<dl class="pd-meta"><div><dt>Weight</dt><dd>{{sizeLabel}}</dd></div><div><dt>Packaging</dt><dd>[To be confirmed]</dd></div><div><dt>Delivery</dt><dd>[Areas &amp; fees TBC]</dd></div><div><dt>Total</dt><dd>{{lineS}} EGP</dd></div></dl>
+<div class="acc"><div class="acc-i"><button class="acc-b" type="button" aria-expanded="{{a0}}" onClick="{{t0}}">Description<span class="acc-ic" aria-hidden="true"></span></button><div class="acc-p" data-open="{{a0}}"><div><p class="body">Lean, skinless chicken breast fillets, trimmed and ready for grilling, pan-searing, baking or slicing into stir-fries. [Final product description to be supplied by AL AMIN.]</p></div></div></div><div class="acc-i"><button class="acc-b" type="button" aria-expanded="{{a1}}" onClick="{{t1}}">Specifications<span class="acc-ic" aria-hidden="true"></span></button><div class="acc-p" data-open="{{a1}}"><div><dl class="dl"><dt>Weight</dt><dd>{{sizeLabel}} (sample)</dd><dt>Packaging</dt><dd>[Packaging type — to be confirmed]</dd><dt>Storage</dt><dd>[Storage instructions — to be confirmed]</dd><dt>Shelf life</dt><dd>[To be confirmed]</dd><dt>Product code</dt><dd>[SKU — to be confirmed]</dd></dl></div></div></div><div class="acc-i"><button class="acc-b" type="button" aria-expanded="{{a2}}" onClick="{{t2}}">Storage &amp; handling<span class="acc-ic" aria-hidden="true"></span></button><div class="acc-p" data-open="{{a2}}"><div><p class="body">[Handling and storage guidance to be supplied by AL AMIN’s quality team.]</p></div></div></div><div class="acc-i"><button class="acc-b" type="button" aria-expanded="{{a3}}" onClick="{{t3}}">Delivery<span class="acc-ic" aria-hidden="true"></span></button><div class="acc-p" data-open="{{a3}}"><div><p class="body">[Delivery areas, time windows and fees — to be confirmed.]</p></div></div></div></div>
+<a class="tlink" href="Wholesale.dc.html" style="align-self: flex-start">Buying in bulk? Request wholesale pricing<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>+</b> / You may also like</p><h2 class="d-m" data-rv="">Related products</h2></div><a class="tlink" href="Products.dc.html">View all<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></a></div>
+<div class="pgrid"><template data-sc="for" list="{{related}}" as="p" hint-placeholder-count="4"><article class="pc pin" style="--i: {{p.i}}">
+<a class="pc-media" href="Product.dc.html" data-cursor="VIEW" aria-label="View {{p.name}}">
+<div class="ph {{p.tone}} pc-a {{p.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{p.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{p.img}}" alt="{{p.name}}" loading="lazy"></template></div><template data-sc="if" value="{{p.noImg}}" hint-placeholder-val="{{true}}"><span class="ph-cap">{{p.shot}}</span></template></div>
+<template data-sc="if" value="{{p.showB}}" hint-placeholder-val="{{true}}"><div class="ph {{p.tone2}} pc-b {{p.img2Cls}}" aria-hidden="true"><div class="ph-in"><template data-sc="if" value="{{p.hasImg2}}" hint-placeholder-val="{{false}}"><img data-ref="{{p.img2}}" alt="" loading="lazy"></template></div><template data-sc="if" value="{{p.noImg2}}" hint-placeholder-val="{{true}}"><span class="ph-cap">Alt angle — pack shot</span></template></div></template>
+<span class="pc-no">No. {{p.no}}</span><span class="pc-w">{{p.weight}}</span>
+</a>
+<div class="pc-body">
+<p class="pc-cat">{{p.catName}}</p>
+<h3 class="pc-name"><a href="Product.dc.html">{{p.name}}</a></h3>
+<p class="pc-desc">{{p.desc}}</p>
+<div class="pc-foot">
+<p class="price"><span class="price-n">{{p.priceS}}</span><span class="price-c">EGP</span><span class="tag-s">Sample price</span></p>
+<button class="{{p.addCls}}" type="button" onClick="{{p.add}}" aria-label="Add: {{p.name}}"><span class="add-a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>Add</span><span class="add-b"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg>Added</span></button>
+</div>
+</div>
+</article></template></div>
+</div>
+</section>
+<div class="mbar"><div class="price"><span class="price-n">{{lineS}}</span><span class="price-c">EGP · sample</span></div><button class="btn" type="button" data-state="{{addState}}" onClick="{{addNow}}"><span class="btn-l">{{addLabel}}</span></button></div>
+</main>
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr-top">
+<div class="ftr-brand"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"><p class="body" style="max-width: 36ch">Quality you can trust. Freshness you can feel. For homes and for businesses.</p></div>
+<div><h4>Explore</h4><ul><li><a href="Home.dc.html">Home</a></li><li><a href="About.dc.html">About Us</a></li><li><a href="Products.dc.html">Products</a></li><li><a href="Contact.dc.html">Contact</a></li><li><a href="Account.dc.html">My Account</a></li></ul></div><div><h4>Products</h4><ul><li><a href="Products.dc.html">Whole Birds</a></li><li><a href="Products.dc.html">Fresh Cuts</a></li><li><a href="Products.dc.html">Boneless &amp; Fillets</a></li><li><a href="Products.dc.html">Ready to Cook</a></li></ul></div><div><h4>Business</h4><ul><li><a href="Wholesale.dc.html">Wholesale Solutions</a></li><li><a href="Wholesale.dc.html">Request a Quotation</a></li><li><a href="Wholesale.dc.html">Restaurants &amp; Catering</a></li><li><a href="Wholesale.dc.html">Distributors &amp; Traders</a></li></ul></div>
+<div><h4>Contact</h4><ul><li class="ftr-ph">[Phone number]</li><li class="ftr-ph">[Email address]</li><li class="ftr-ph">[Address — awaiting confirmation]</li></ul><h4 style="margin-top: 32px">Follow</h4><div class="socials"><a href="#" aria-label="Facebook — link to confirm">Facebook</a><a href="#" aria-label="Instagram — link to confirm">Instagram</a><a href="#" aria-label="LinkedIn — link to confirm">LinkedIn</a><a href="#" aria-label="WhatsApp — link to confirm">WhatsApp</a></div></div>
+</div>
+<p class="ftr-slogan" lang="en" dir="ltr" data-rv="mask"><span>....</span>the place to be<span>....</span></p>
+<div class="ftr-bot"><span>© 2026 AL AMIN for Poultry Production. All rights reserved.</span><span>Contact details &amp; social accounts awaiting company confirmation</span></div>
+</div>
+</footer>
+<template data-sc="if" value="{{hasToast}}" hint-placeholder-val="{{false}}">
+<div class="toast" role="status" aria-live="polite"><span class="toast-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg></span><p><b>Added to cart</b>{{toastName}}</p><a class="btn btn--white btn--sm" href="Cart.dc.html"><span class="btn-l">View cart</span></a></div>
+</template>
+<p class="proto"><span class="ph-dot"></span>Design prototype · sample content &amp; prices</p>
+<div class="cur" aria-hidden="true"><div class="cur-ring"></div><div class="cur-dot"></div></div>
+</div>
+</template>
+<template id="tpl-Cart">
+
+<div class="aa" lang="en">
+<div class="pt" aria-hidden="true"></div>
+<header class="hdr" data-solid="0">
+<div class="hdr-in">
+<a class="logo-tab" href="Home.dc.html" aria-label="AL AMIN for Poultry Production — home" data-cursor="HOME"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"></a>
+<nav class="nav" aria-label="Primary"><a class="nav-a" href="Home.dc.html">Home</a><a class="nav-a" href="About.dc.html">About</a><a class="nav-a" href="Products.dc.html">Products</a><a class="nav-a" href="Wholesale.dc.html">Wholesale</a><a class="nav-a" href="Contact.dc.html">Contact</a></nav>
+<div class="tools">
+<a class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a>
+<a class="tool hide-m" href="Account.dc.html" aria-label="My account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="M4.5 20c1.2-3.8 4-5.6 7.5-5.6s6.3 1.8 7.5 5.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg></a>
+<a class="tool" href="Cart.dc.html" aria-label="Cart, {{cart}} items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8zM9 8V6.5a3 3 0 016 0V8" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg><span class="badge {{bumpCls}}">{{cart}}</span></a>
+<button class="tool burger" type="button" onClick="{{toggleMenu}}" aria-label="Open menu" aria-expanded="{{menuStr}}"><i></i></button>
+</div>
+</div>
+<span class="hdr-bar" aria-hidden="true"></span>
+</header>
+<template data-sc="if" value="{{menuOpen}}" hint-placeholder-val="{{false}}">
+<div class="mm" role="dialog" aria-modal="true" aria-label="Menu">
+<div class="mm-top"><img data-ref="img:logo" alt="AL AMIN"><button class="ibtn" type="button" style="border-color: rgba(255,255,255,.3); color: #fff" onClick="{{closeMenu}}" aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2"></path></svg></button></div>
+<nav class="mm-nav" aria-label="Mobile"><a class="mm-a" href="Home.dc.html" style="--i: 0" onClick="{{closeMenu}}">Home<small>01</small></a><a class="mm-a" href="About.dc.html" style="--i: 1" onClick="{{closeMenu}}">About<small>02</small></a><a class="mm-a" href="Products.dc.html" style="--i: 2" onClick="{{closeMenu}}">Products<small>03</small></a><a class="mm-a" href="Wholesale.dc.html" style="--i: 3" onClick="{{closeMenu}}">Wholesale<small>04</small></a><a class="mm-a" href="Contact.dc.html" style="--i: 4" onClick="{{closeMenu}}">Contact<small>05</small></a><a class="mm-a" href="Account.dc.html" style="--i: 5" onClick="{{closeMenu}}">Account<small>06</small></a><a class="mm-a" href="Cart.dc.html" style="--i: 6" onClick="{{closeMenu}}">Cart<small>07</small></a></nav>
+<div class="mm-foot"><a class="btn btn--red btn--block" href="Wholesale.dc.html"><span class="btn-l">Business inquiry<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a style="color: #fff; align-self: flex-start" class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a><p class="slogan" style="font-size: 20px">....the place to be....</p></div>
+</div>
+</template>
+<main>
+<section class="phero phero--compact">
+
+<div class="wrap phero-in">
+<nav class="crumbs fu" aria-label="Breadcrumb" style="--i: 0"><a href="Home.dc.html">Home</a><i></i><span aria-current="page">Cart</span></nav>
+<p class="eyebrow fu" style="--i: 1"><b>Your order</b> / Cart</p>
+<h1 class="d-xl" style="max-width: 12ch"><span class="ln"><span style="--i: 0">Your</span></span><span class="ln"><span style="--i: 1">cart.</span></span></h1>
+
+<div class="proto-bar fu" style="--i: 3">Prototype state<div class="seg" role="group" aria-label="Cart state"><button type="button" aria-pressed="{{full}}" onClick="{{showFull}}">With items</button><button type="button" aria-pressed="{{emptyP}}" onClick="{{showEmpty}}">Empty</button></div></div>
+</div>
+</section>
+<section class="sec" style="padding-top: 64px">
+<div class="wrap">
+<template data-sc="if" value="{{hasItems}}" hint-placeholder-val="{{true}}">
+<div class="split2">
+<div>
+<div class="res cap" style="border: 0; margin: 0"><span>{{lineN}} products · {{unitN}} items</span><span class="tag-s" style="margin: 0">Sample prices</span></div>
+<ul class="cl">
+<template data-sc="for" list="{{items}}" as="it" hint-placeholder-count="3">
+<li class="ci"><div class="thumb"><div class="ph {{it.tone}} {{it.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{it.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{it.img}}" alt="{{it.name}}" loading="lazy"></template></div></div></div>
+<div class="ci-n"><a href="Product.dc.html">{{it.name}}</a><span class="ci-v">{{it.variant}} · {{it.unitS}} EGP each</span></div>
+<div class="qty qty--sm" role="group" aria-label="Quantity for {{it.name}}"><button type="button" onClick="{{it.dec}}" disabled="{{it.decDis}}" aria-label="Decrease"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg></button><output><span>{{it.qty}}</span></output><button type="button" onClick="{{it.inc}}" aria-label="Increase"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg></button></div>
+<p class="ci-p">{{it.lineS}}<small>EGP</small></p>
+<button class="ibtn" type="button" onClick="{{it.remove}}" aria-label="Remove {{it.name}}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M10 7V4.5h4V7M7 7l1 13h8l1-13" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg></button></li>
+</template>
+</ul>
+<div class="cart-act"><a class="tlink" href="Products.dc.html">Continue shopping<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></a><template data-sc="if" value="{{hasUndo}}" hint-placeholder-val="{{false}}"><p class="err" style="color: var(--navy)">Removed {{undoName}}. <button class="tlink" type="button" onClick="{{undo}}" style="background: none; border: 0; cursor: pointer; color: var(--red)">Undo</button></p></template></div>
+</div>
+<aside class="panel sticky" aria-label="Order summary">
+<div class="sum">
+<p class="eyebrow" style="margin-bottom: 8px"><b>Σ</b> / Order summary</p>
+<div class="sum-row"><span>Subtotal</span><span>{{subS}} EGP</span></div>
+<div class="sum-row"><span>Delivery</span><span class="tbd">[Fee to be confirmed]</span></div>
+<div class="sum-tot"><span>Total</span><b>{{subS}} <small style="font-size: 14px">EGP</small></b></div>
+<p class="hint">Delivery fee and final total confirmed at checkout. Prices shown are sample values.</p>
+<a class="btn btn--block" href="Checkout.dc.html" data-mag=""><span class="btn-l">Proceed to checkout<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a>
+<a class="btn btn--ghost btn--block" href="Products.dc.html"><span class="btn-l">Continue shopping</span></a>
+</div>
+</aside>
+</div>
+</template>
+<template data-sc="if" value="{{isEmpty}}" hint-placeholder-val="{{false}}">
+<div class="cart-empty"><p class="eyebrow"><b>0</b> / items</p><h2 class="d-xl">Your cart is empty.</h2><p class="lead" style="color: var(--mute)">Nothing here yet — explore the range and add your favourites.</p><div class="ctas"><a class="btn " href="Products.dc.html" data-mag=""><span class="btn-l">Explore products<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a class="btn btn--ghost" href="Wholesale.dc.html"><span class="btn-l">Business inquiry</span></a></div></div>
+<div class="sec-head" style="margin-top: 40px"><div><p class="eyebrow"><b>+</b> / Popular right now</p></div></div>
+<div class="pgrid"><template data-sc="for" list="{{sugg}}" as="p" hint-placeholder-count="4"><article class="pc pin" style="--i: {{p.i}}">
+<a class="pc-media" href="Product.dc.html" data-cursor="VIEW" aria-label="View {{p.name}}">
+<div class="ph {{p.tone}} pc-a {{p.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{p.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{p.img}}" alt="{{p.name}}" loading="lazy"></template></div><template data-sc="if" value="{{p.noImg}}" hint-placeholder-val="{{true}}"><span class="ph-cap">{{p.shot}}</span></template></div>
+<template data-sc="if" value="{{p.showB}}" hint-placeholder-val="{{true}}"><div class="ph {{p.tone2}} pc-b {{p.img2Cls}}" aria-hidden="true"><div class="ph-in"><template data-sc="if" value="{{p.hasImg2}}" hint-placeholder-val="{{false}}"><img data-ref="{{p.img2}}" alt="" loading="lazy"></template></div><template data-sc="if" value="{{p.noImg2}}" hint-placeholder-val="{{true}}"><span class="ph-cap">Alt angle — pack shot</span></template></div></template>
+<span class="pc-no">No. {{p.no}}</span><span class="pc-w">{{p.weight}}</span>
+</a>
+<div class="pc-body">
+<p class="pc-cat">{{p.catName}}</p>
+<h3 class="pc-name"><a href="Product.dc.html">{{p.name}}</a></h3>
+<p class="pc-desc">{{p.desc}}</p>
+<div class="pc-foot">
+<p class="price"><span class="price-n">{{p.priceS}}</span><span class="price-c">EGP</span><span class="tag-s">Sample price</span></p>
+<button class="{{p.addCls}}" type="button" onClick="{{p.add}}" aria-label="Add: {{p.name}}"><span class="add-a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>Add</span><span class="add-b"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg>Added</span></button>
+</div>
+</div>
+</article></template></div>
+</template>
+</div>
+</section>
+</main>
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr-top">
+<div class="ftr-brand"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"><p class="body" style="max-width: 36ch">Quality you can trust. Freshness you can feel. For homes and for businesses.</p></div>
+<div><h4>Explore</h4><ul><li><a href="Home.dc.html">Home</a></li><li><a href="About.dc.html">About Us</a></li><li><a href="Products.dc.html">Products</a></li><li><a href="Contact.dc.html">Contact</a></li><li><a href="Account.dc.html">My Account</a></li></ul></div><div><h4>Products</h4><ul><li><a href="Products.dc.html">Whole Birds</a></li><li><a href="Products.dc.html">Fresh Cuts</a></li><li><a href="Products.dc.html">Boneless &amp; Fillets</a></li><li><a href="Products.dc.html">Ready to Cook</a></li></ul></div><div><h4>Business</h4><ul><li><a href="Wholesale.dc.html">Wholesale Solutions</a></li><li><a href="Wholesale.dc.html">Request a Quotation</a></li><li><a href="Wholesale.dc.html">Restaurants &amp; Catering</a></li><li><a href="Wholesale.dc.html">Distributors &amp; Traders</a></li></ul></div>
+<div><h4>Contact</h4><ul><li class="ftr-ph">[Phone number]</li><li class="ftr-ph">[Email address]</li><li class="ftr-ph">[Address — awaiting confirmation]</li></ul><h4 style="margin-top: 32px">Follow</h4><div class="socials"><a href="#" aria-label="Facebook — link to confirm">Facebook</a><a href="#" aria-label="Instagram — link to confirm">Instagram</a><a href="#" aria-label="LinkedIn — link to confirm">LinkedIn</a><a href="#" aria-label="WhatsApp — link to confirm">WhatsApp</a></div></div>
+</div>
+<p class="ftr-slogan" lang="en" dir="ltr" data-rv="mask"><span>....</span>the place to be<span>....</span></p>
+<div class="ftr-bot"><span>© 2026 AL AMIN for Poultry Production. All rights reserved.</span><span>Contact details &amp; social accounts awaiting company confirmation</span></div>
+</div>
+</footer>
+<template data-sc="if" value="{{hasToast}}" hint-placeholder-val="{{false}}">
+<div class="toast" role="status" aria-live="polite"><span class="toast-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg></span><p><b>Added to cart</b>{{toastName}}</p><a class="btn btn--white btn--sm" href="Cart.dc.html"><span class="btn-l">View cart</span></a></div>
+</template>
+<p class="proto"><span class="ph-dot"></span>Design prototype · sample content &amp; prices</p>
+<div class="cur" aria-hidden="true"><div class="cur-ring"></div><div class="cur-dot"></div></div>
+</div>
+</template>
+<template id="tpl-Checkout">
+
+<div class="aa" lang="en">
+<div class="pt" aria-hidden="true"></div>
+<header class="hdr" data-solid="1" data-force="">
+<div class="hdr-in">
+<a class="logo-tab" href="Home.dc.html" aria-label="AL AMIN for Poultry Production — home" data-cursor="HOME"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"></a>
+<nav class="nav" aria-label="Primary"><a class="nav-a" href="Home.dc.html">Home</a><a class="nav-a" href="About.dc.html">About</a><a class="nav-a" href="Products.dc.html">Products</a><a class="nav-a" href="Wholesale.dc.html">Wholesale</a><a class="nav-a" href="Contact.dc.html">Contact</a></nav>
+<div class="tools">
+<a class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a>
+<a class="tool hide-m" href="Account.dc.html" aria-label="My account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="M4.5 20c1.2-3.8 4-5.6 7.5-5.6s6.3 1.8 7.5 5.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg></a>
+<a class="tool" href="Cart.dc.html" aria-label="Cart, {{cart}} items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8zM9 8V6.5a3 3 0 016 0V8" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg><span class="badge {{bumpCls}}">{{cart}}</span></a>
+<button class="tool burger" type="button" onClick="{{toggleMenu}}" aria-label="Open menu" aria-expanded="{{menuStr}}"><i></i></button>
+</div>
+</div>
+<span class="hdr-bar" aria-hidden="true"></span>
+</header>
+<template data-sc="if" value="{{menuOpen}}" hint-placeholder-val="{{false}}">
+<div class="mm" role="dialog" aria-modal="true" aria-label="Menu">
+<div class="mm-top"><img data-ref="img:logo" alt="AL AMIN"><button class="ibtn" type="button" style="border-color: rgba(255,255,255,.3); color: #fff" onClick="{{closeMenu}}" aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2"></path></svg></button></div>
+<nav class="mm-nav" aria-label="Mobile"><a class="mm-a" href="Home.dc.html" style="--i: 0" onClick="{{closeMenu}}">Home<small>01</small></a><a class="mm-a" href="About.dc.html" style="--i: 1" onClick="{{closeMenu}}">About<small>02</small></a><a class="mm-a" href="Products.dc.html" style="--i: 2" onClick="{{closeMenu}}">Products<small>03</small></a><a class="mm-a" href="Wholesale.dc.html" style="--i: 3" onClick="{{closeMenu}}">Wholesale<small>04</small></a><a class="mm-a" href="Contact.dc.html" style="--i: 4" onClick="{{closeMenu}}">Contact<small>05</small></a><a class="mm-a" href="Account.dc.html" style="--i: 5" onClick="{{closeMenu}}">Account<small>06</small></a><a class="mm-a" href="Cart.dc.html" style="--i: 6" onClick="{{closeMenu}}">Cart<small>07</small></a></nav>
+<div class="mm-foot"><a class="btn btn--red btn--block" href="Wholesale.dc.html"><span class="btn-l">Business inquiry<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a style="color: #fff; align-self: flex-start" class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a><p class="slogan" style="font-size: 20px">....the place to be....</p></div>
+</div>
+</template>
+<main>
+<section class="lite-top">
+<div class="wrap" style="padding-block: 28px 96px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: 36px">
+<div style="display: flex; flex-direction: column; gap: 18px"><nav class="crumbs fu" aria-label="Breadcrumb" style="--i: 0"><a href="Cart.dc.html">Cart</a><i></i><span aria-current="page">Checkout</span></nav><h1 class="d-l">Checkout</h1></div>
+<p class="cap" style="color: var(--mute); display: flex; align-items: center; gap: 10px"><span class="ph-dot"></span>Secure checkout · payment options to be confirmed</p>
+</div>
+<template data-sc="if" value="{{notDone}}" hint-placeholder-val="{{true}}">
+<div class="steps" aria-label="Checkout progress"><template data-sc="for" list="{{steps}}" as="st" hint-placeholder-count="4"><div class="step {{st.cls}}"><i>{{st.n}}</i>{{st.label}}</div></template></div>
+<div class="split2" style="margin-top: 32px">
+<form onSubmit="{{submit}}" novalidate="">
+<template data-sc="if" value="{{hasErr}}" hint-placeholder-val="{{false}}"><div class="errsum" role="alert"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg><span>Please check the {{errN}} highlighted field(s) before placing your order.</span></div></template>
+<div class="fsec"><div class="fsec-h"><span class="fsec-n {{ok1}}">1</span><h2 class="d-s">Your details</h2></div>
+<div class="fgrid"><div class="field"><label for="name">Full name <span class="req" aria-hidden="true">*</span></label><input id="name" class="inp" type="text" placeholder="First and last name" value="{{v_name}}" onChange="{{c_name}}" aria-invalid="{{i_name}}" aria-describedby="name-e" autocomplete="name" required=""><template data-sc="if" value="{{e_name}}" hint-placeholder-val="{{false}}"><p class="err" id="name-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_nameMsg}}</p></template></div><div class="field"><label for="phone">Phone number <span class="req" aria-hidden="true">*</span></label><input id="phone" class="inp" type="tel" placeholder="Mobile number" value="{{v_phone}}" onChange="{{c_phone}}" aria-invalid="{{i_phone}}" aria-describedby="phone-e" autocomplete="tel" required=""><template data-sc="if" value="{{e_phone}}" hint-placeholder-val="{{false}}"><p class="err" id="phone-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_phoneMsg}}</p></template></div><div class="field span2"><label for="email">Email (optional)</label><input id="email" class="inp" type="email" placeholder="For your order receipt" value="{{v_email}}" onChange="{{c_email}}" aria-invalid="{{i_email}}" aria-describedby="email-e" autocomplete="email"><template data-sc="if" value="{{e_email}}" hint-placeholder-val="{{false}}"><p class="err" id="email-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_emailMsg}}</p></template></div></div></div>
+<div class="fsec"><div class="fsec-h"><span class="fsec-n {{ok2}}">2</span><h2 class="d-s">Delivery</h2></div>
+<div class="fgrid"><div class="field"><label for="area">Delivery area <span class="req" aria-hidden="true">*</span></label><select id="area" class="inp" value="{{v_area}}" onChange="{{c_area}}" aria-invalid="{{i_area}}"><option value="">Select delivery area</option><option value="a1">[Delivery area 1 — to be confirmed]</option><option value="a2">[Delivery area 2 — to be confirmed]</option><option value="a3">[Delivery area 3 — to be confirmed]</option></select><template data-sc="if" value="{{e_area}}" hint-placeholder-val="{{false}}"><p class="err"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_areaMsg}}</p></template></div><div class="field"><label for="street">Street address <span class="req" aria-hidden="true">*</span></label><input id="street" class="inp" type="text" placeholder="Street and number" value="{{v_street}}" onChange="{{c_street}}" aria-invalid="{{i_street}}" aria-describedby="street-e" autocomplete="street-address" required=""><template data-sc="if" value="{{e_street}}" hint-placeholder-val="{{false}}"><p class="err" id="street-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_streetMsg}}</p></template></div><div class="field"><label for="bldg">Building, floor, apartment</label><input id="bldg" class="inp" type="text" placeholder="e.g. Building 4, floor 2, apt 7" value="{{v_bldg}}" onChange="{{c_bldg}}" aria-invalid="{{i_bldg}}" aria-describedby="bldg-e"><template data-sc="if" value="{{e_bldg}}" hint-placeholder-val="{{false}}"><p class="err" id="bldg-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_bldgMsg}}</p></template></div><div class="field span2"><label for="notes">Delivery notes</label><textarea id="notes" class="inp" placeholder="Landmarks or instructions for the driver" value="{{v_notes}}" onChange="{{c_notes}}" aria-invalid="{{i_notes}}" aria-describedby="notes-e"></textarea><template data-sc="if" value="{{e_notes}}" hint-placeholder-val="{{false}}"><p class="err" id="notes-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_notesMsg}}</p></template></div></div>
+<p class="hint">[Delivery windows and fees — to be confirmed by AL AMIN]</p></div>
+<div class="fsec"><div class="fsec-h"><span class="fsec-n {{ok3}}">3</span><h2 class="d-s">Payment</h2></div>
+<div class="pay" role="radiogroup" aria-label="Payment method">
+<label class="choice"><input type="radio" name="pay" checked="{{payA}}" onChange="{{setPayA}}"><span>Cash on delivery</span><span class="tag-s" style="margin: 0">To be confirmed</span></label>
+<label class="choice"><input type="radio" name="pay" checked="{{payB}}" onChange="{{setPayB}}"><span>Card payment</span><span class="tag-s" style="margin: 0">Provider to be confirmed</span></label>
+</div></div>
+<div class="fsec"><div class="fsec-h"><span class="fsec-n {{ok4}}">4</span><h2 class="d-s">Confirm</h2></div>
+<label class="chk"><input id="terms" type="checkbox" checked="{{v_terms}}" onChange="{{c_terms}}" aria-invalid="{{i_terms}}">I agree to the terms of sale and delivery <span class="req">*</span></label>
+<template data-sc="if" value="{{e_terms}}" hint-placeholder-val="{{false}}"><p class="err"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_termsMsg}}</p></template>
+<button class="btn btn--block" type="submit" data-state="{{busyState}}" data-mag=""><span class="btn-l">Place order · {{totS}} EGP<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></button>
+</div>
+</form>
+<aside class="panel sticky" aria-label="Order summary"><div class="sum">
+<p class="eyebrow"><b>Σ</b> / Your order</p>
+<template data-sc="for" list="{{items}}" as="it" hint-placeholder-count="3"><div class="osum-i"><div class="thumb"><div class="ph {{it.tone}} {{it.imgCls}}"><div class="ph-in"><template data-sc="if" value="{{it.hasImg}}" hint-placeholder-val="{{false}}"><img data-ref="{{it.img}}" alt="{{it.name}}" loading="lazy"></template></div></div></div><div><b>{{it.name}}</b><span class="hint">{{it.v}} × {{it.q}}</span></div><span style="font-weight: 700">{{it.lineS}}</span></div></template>
+<div class="sum-row" style="padding-top: 14px; border-top: 1px solid var(--line)"><span>Subtotal</span><span>{{totS}} EGP</span></div>
+<div class="sum-row"><span>Delivery</span><span class="tbd">[To be confirmed]</span></div>
+<div class="sum-tot"><span>Total</span><b>{{totS}}</b></div>
+<a class="tlink" href="Cart.dc.html">Edit cart<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></a>
+</div></aside>
+</div>
+</template>
+<template data-sc="if" value="{{done}}" hint-placeholder-val="{{false}}">
+<div class="conf">
+<div class="success"><span class="success-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg></span><p class="eyebrow"><b>✓</b> / Order received</p><h2 class="d-l">Thank you, {{firstName}}.</h2><p class="lead">Your order <b>AA-{{ref}}</b> (sample reference) has been placed. We’ll call {{v_phone}} to confirm delivery.</p><div class="ctas"><a class="btn" href="Account.dc.html"><span class="btn-l">Track in My Account<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a class="btn btn--ghost" href="Products.dc.html"><span class="btn-l">Continue shopping</span></a></div></div>
+<div class="panel"><div class="sum"><p class="eyebrow"><b>Σ</b> / Summary</p><div class="sum-row"><span>Items</span><span>{{itemN}}</span></div><div class="sum-row"><span>Delivery to</span><span>{{v_street}}</span></div><div class="sum-row"><span>Payment</span><span>{{payLabel}}</span></div><div class="sum-tot"><span>Total</span><b>{{totS}}</b></div></div></div>
+</div>
+</template>
+</div>
+</section>
+</main>
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr-top">
+<div class="ftr-brand"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"><p class="body" style="max-width: 36ch">Quality you can trust. Freshness you can feel. For homes and for businesses.</p></div>
+<div><h4>Explore</h4><ul><li><a href="Home.dc.html">Home</a></li><li><a href="About.dc.html">About Us</a></li><li><a href="Products.dc.html">Products</a></li><li><a href="Contact.dc.html">Contact</a></li><li><a href="Account.dc.html">My Account</a></li></ul></div><div><h4>Products</h4><ul><li><a href="Products.dc.html">Whole Birds</a></li><li><a href="Products.dc.html">Fresh Cuts</a></li><li><a href="Products.dc.html">Boneless &amp; Fillets</a></li><li><a href="Products.dc.html">Ready to Cook</a></li></ul></div><div><h4>Business</h4><ul><li><a href="Wholesale.dc.html">Wholesale Solutions</a></li><li><a href="Wholesale.dc.html">Request a Quotation</a></li><li><a href="Wholesale.dc.html">Restaurants &amp; Catering</a></li><li><a href="Wholesale.dc.html">Distributors &amp; Traders</a></li></ul></div>
+<div><h4>Contact</h4><ul><li class="ftr-ph">[Phone number]</li><li class="ftr-ph">[Email address]</li><li class="ftr-ph">[Address — awaiting confirmation]</li></ul><h4 style="margin-top: 32px">Follow</h4><div class="socials"><a href="#" aria-label="Facebook — link to confirm">Facebook</a><a href="#" aria-label="Instagram — link to confirm">Instagram</a><a href="#" aria-label="LinkedIn — link to confirm">LinkedIn</a><a href="#" aria-label="WhatsApp — link to confirm">WhatsApp</a></div></div>
+</div>
+<p class="ftr-slogan" lang="en" dir="ltr" data-rv="mask"><span>....</span>the place to be<span>....</span></p>
+<div class="ftr-bot"><span>© 2026 AL AMIN for Poultry Production. All rights reserved.</span><span>Contact details &amp; social accounts awaiting company confirmation</span></div>
+</div>
+</footer>
+<template data-sc="if" value="{{hasToast}}" hint-placeholder-val="{{false}}">
+<div class="toast" role="status" aria-live="polite"><span class="toast-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg></span><p><b>Added to cart</b>{{toastName}}</p><a class="btn btn--white btn--sm" href="Cart.dc.html"><span class="btn-l">View cart</span></a></div>
+</template>
+<p class="proto"><span class="ph-dot"></span>Design prototype · sample content &amp; prices</p>
+<div class="cur" aria-hidden="true"><div class="cur-ring"></div><div class="cur-dot"></div></div>
+</div>
+</template>
+<template id="tpl-Wholesale">
+
+<div class="aa" lang="en">
+<div class="pt" aria-hidden="true"></div>
+<header class="hdr" data-solid="0">
+<div class="hdr-in">
+<a class="logo-tab" href="Home.dc.html" aria-label="AL AMIN for Poultry Production — home" data-cursor="HOME"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"></a>
+<nav class="nav" aria-label="Primary"><a class="nav-a" href="Home.dc.html">Home</a><a class="nav-a" href="About.dc.html">About</a><a class="nav-a" href="Products.dc.html">Products</a><a class="nav-a" href="Wholesale.dc.html" aria-current="page">Wholesale</a><a class="nav-a" href="Contact.dc.html">Contact</a></nav>
+<div class="tools">
+<a class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a>
+<a class="tool hide-m" href="Account.dc.html" aria-label="My account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="M4.5 20c1.2-3.8 4-5.6 7.5-5.6s6.3 1.8 7.5 5.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg></a>
+<a class="tool" href="Cart.dc.html" aria-label="Cart, {{cart}} items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8zM9 8V6.5a3 3 0 016 0V8" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg><span class="badge {{bumpCls}}">{{cart}}</span></a>
+<button class="tool burger" type="button" onClick="{{toggleMenu}}" aria-label="Open menu" aria-expanded="{{menuStr}}"><i></i></button>
+</div>
+</div>
+<span class="hdr-bar" aria-hidden="true"></span>
+</header>
+<template data-sc="if" value="{{menuOpen}}" hint-placeholder-val="{{false}}">
+<div class="mm" role="dialog" aria-modal="true" aria-label="Menu">
+<div class="mm-top"><img data-ref="img:logo" alt="AL AMIN"><button class="ibtn" type="button" style="border-color: rgba(255,255,255,.3); color: #fff" onClick="{{closeMenu}}" aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2"></path></svg></button></div>
+<nav class="mm-nav" aria-label="Mobile"><a class="mm-a" href="Home.dc.html" style="--i: 0" onClick="{{closeMenu}}">Home<small>01</small></a><a class="mm-a" href="About.dc.html" style="--i: 1" onClick="{{closeMenu}}">About<small>02</small></a><a class="mm-a" href="Products.dc.html" style="--i: 2" onClick="{{closeMenu}}">Products<small>03</small></a><a class="mm-a" href="Wholesale.dc.html" style="--i: 3" onClick="{{closeMenu}}">Wholesale<small>04</small></a><a class="mm-a" href="Contact.dc.html" style="--i: 4" onClick="{{closeMenu}}">Contact<small>05</small></a><a class="mm-a" href="Account.dc.html" style="--i: 5" onClick="{{closeMenu}}">Account<small>06</small></a><a class="mm-a" href="Cart.dc.html" style="--i: 6" onClick="{{closeMenu}}">Cart<small>07</small></a></nav>
+<div class="mm-foot"><a class="btn btn--red btn--block" href="Wholesale.dc.html"><span class="btn-l">Business inquiry<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a style="color: #fff; align-self: flex-start" class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a><p class="slogan" style="font-size: 20px">....the place to be....</p></div>
+</div>
+</template>
+<main>
+<section class="phero ws-hero">
+<div class="phero-media"><div class="ph ph--steel has-img"><div class="ph-in"><img data-ref="img:wholesale-hero" alt="AL AMIN chicken pack on a commercial chilled counter" loading="lazy" style="object-position: 60% 50%"></div></div><div class="hero-scrim"></div></div>
+<div class="wrap phero-in" style="padding-bottom: 24px">
+<nav class="crumbs fu" aria-label="Breadcrumb" style="--i: 0"><a href="Home.dc.html">Home</a><i></i><span aria-current="page">Wholesale</span></nav>
+<p class="eyebrow fu" style="--i: 1"><b>B2B</b> / Wholesale &amp; business</p>
+<h1 class="d-xl"><span class="ln"><span style="--i: 0">Built for</span></span><span class="ln"><span style="--i: 1">business.</span></span><span class="ln"><span style="--i: 2"><span class="mark">Ready</span> for</span></span><span class="ln"><span style="--i: 3">reliable supply.</span></span></h1>
+<div class="hero-foot fu" style="--i: 4"><p class="lead">Explore business supply solutions designed for traders, distributors, restaurants, and food businesses.</p><div class="ctas"><a class="btn" href="#quote" data-mag=""><span class="btn-l">Request a quotation<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a class="btn btn--ghost-inv" href="#sales"><span class="btn-l">Talk to sales</span></a></div></div>
+</div>
+<div class="wrap hero-meta" style="animation-delay: 1.2s"><p class="b2b-sw" aria-hidden="true"><span>Retail</span><span class="on">Wholesale</span></p><a class="scroll-ind" href="#types">Scroll<i></i></a><p class="cap">Separate business journey · same brand</p></div>
+</section>
+<section class="sec">
+<div class="wrap ws-intro">
+<p class="eyebrow"><b>01</b> / Partnering with business</p>
+<div style="display: flex; flex-direction: column; gap: 32px"><p class="ab-big" data-rv="">Whether you stock shelves, run a kitchen or supply others, we want to understand your volumes, your specifications and your schedule — then build a supply arrangement around them.</p><p class="ph-text" style="margin: 0" data-rv="">[Business offer overview — to be supplied by AL AMIN: capacity, service areas and commercial terms.]</p></div>
+</div>
+</section>
+<section class="sec on-paper" id="types" style="padding-top: 96px">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>02</b> / Who we work with</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>Business</span></span><span class="ln" style="--l: 1"><span>customers.</span></span></h2></div></div>
+<div class="ctype"><a class="ct" href="#quote" data-cursor="QUOTE" data-rv="" style="--i: 0"><span class="ct-n">01</span><h3 class="ct-t">Traders</h3><p class="body">Wholesale volumes for resale, with clear pack formats and pricing.</p><div class="ph ph--steel has-img"><div class="ph-in"><img data-ref="img:ws-traders" alt="AL AMIN truck at a distribution warehouse" loading="lazy"></div></div></a><a class="ct" href="#quote" data-cursor="QUOTE" data-rv="" style="--i: 1"><span class="ct-n">02</span><h3 class="ct-t">Distributors</h3><p class="body">Supply arrangements discussed around your routes and customers.</p><div class="ph ph--night has-img"><div class="ph-in"><img data-ref="img:ws-distributors" alt="AL AMIN delivery truck with branded products" loading="lazy"></div></div></a><a class="ct" href="#quote" data-cursor="QUOTE" data-rv="" style="--i: 0"><span class="ct-n">03</span><h3 class="ct-t">Restaurants &amp; catering</h3><p class="body">Consistent cuts and specifications your kitchen can plan around.</p><div class="ph ph--clay has-img"><div class="ph-in"><img data-ref="img:ws-restaurants" alt="AL AMIN chicken pack with fresh ingredients" loading="lazy"></div></div></a><a class="ct" href="#quote" data-cursor="QUOTE" data-rv="" style="--i: 1"><span class="ct-n">04</span><h3 class="ct-t">Food businesses</h3><p class="body">Raw material for processors, manufacturers and food service.</p><div class="ph ph--ice has-img"><div class="ph-in"><img data-ref="img:ws-food-business" alt="Processing line for food business supply" loading="lazy"></div></div></a></div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>03</b> / Wholesale range</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>Build your</span></span><span class="ln" style="--l: 1"><span>quotation.</span></span></h2></div><div class="sec-aside"><p class="body">Add products to your quotation — they’ll be pre-filled in the request form below.</p><div class="qcount"><b>{{quoteN}}</b><span class="cap">products in your quote</span><a class="tlink" href="#quote">Go to form<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></a></div></div></div>
+<div class="tscroll"><table class="rtable"><thead><tr><th scope="col">Product</th><th scope="col">Category</th><th scope="col">Pack formats</th><th scope="col">Min. order</th><th scope="col">Specification</th><th scope="col"><span class="vh">Quote</span></th></tr></thead>
+<tbody><template data-sc="for" list="{{range}}" as="r" hint-placeholder-count="10"><tr><td>{{r.name}}</td><td>{{r.catName}}</td><td class="tbd2">[To be confirmed]</td><td class="tbd2">[To be confirmed]</td><td class="tbd2">[Spec sheet on request]</td><td style="text-align: end"><button class="qbtn" type="button" aria-pressed="{{r.inQ}}" onClick="{{r.toggle}}">{{r.label}}</button></td></tr></template></tbody></table></div>
+</div>
+</section>
+<section class="sec on-navy">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>04</b> / Packaging &amp; specifications</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>Specified</span></span><span class="ln" style="--l: 1"><span>to your needs.</span></span></h2></div><span class="note">Details awaiting AL AMIN</span></div>
+<div class="specs">
+<div data-rv=""><span class="ct-n">A</span><h3 class="d-s">Pack formats</h3><p class="body">[Available pack sizes, carton configurations and pallet formats.]</p></div>
+<div data-rv="" style="--i: 1"><span class="ct-n">B</span><h3 class="d-s">Specifications</h3><p class="body">[Weight bands, cut specifications and product data sheets.]</p></div>
+<div data-rv="" style="--i: 2"><span class="ct-n">C</span><h3 class="d-s">Labelling</h3><p class="body">[Labelling options, including private label if offered.]</p></div>
+</div>
+</div>
+</section>
+<section class="sec">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" data-rv=""><b>05</b> / Working together</p><h2 class="d-l lns" data-rv=""><span class="ln" style="--l: 0"><span>What we’ll</span></span><span class="ln" style="--l: 1"><span>plan with you.</span></span></h2></div><div class="sec-aside"><p class="body">The topics we work through with every business customer — no fixed promises until we understand your needs.</p></div></div>
+<div class="ben">
+<div data-rv=""><span class="ct-n">01</span><h3 class="d-s">A dedicated contact</h3><p class="body">One point of contact on our sales team for quotes, orders and questions.</p></div>
+<div data-rv="" style="--i: 1"><span class="ct-n">02</span><h3 class="d-s">Consistent specification</h3><p class="body">Agreeing the cuts, weights and pack formats your operation depends on.</p></div>
+<div data-rv="" style="--i: 2"><span class="ct-n">03</span><h3 class="d-s">Packaging that fits</h3><p class="body">Formats discussed around your storage, handling and resale.</p></div>
+<div data-rv="" style="--i: 3"><span class="ct-n">04</span><h3 class="d-s">Delivery planning</h3><p class="body">Delivery locations and schedules discussed and agreed up front.</p></div>
+</div>
+</div>
+</section>
+<section class="sec on-paper" id="quote">
+<div class="wrap qf">
+<div class="qf-side"><p class="eyebrow"><b>06</b> / Request a quotation</p><h2 class="d-l">Tell us what your business needs.</h2><p class="body">Our sales team will review your request and come back to you. Fields marked <span class="req">*</span> are required.</p><p class="hint">[Response time — to be confirmed by AL AMIN]</p></div>
+<div class="panel">
+<template data-sc="if" value="{{notSent}}" hint-placeholder-val="{{true}}">
+<form onSubmit="{{submit}}" novalidate="" style="display: flex; flex-direction: column; gap: 24px">
+<template data-sc="if" value="{{hasErr}}" hint-placeholder-val="{{false}}"><div class="errsum" role="alert"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg><span>{{errN}} field(s) need your attention.</span></div></template>
+<div class="fgrid">
+<div class="field"><label for="biz">Business name <span class="req" aria-hidden="true">*</span></label><input id="biz" class="inp" type="text" placeholder="Registered business name" value="{{v_biz}}" onChange="{{c_biz}}" aria-invalid="{{i_biz}}" aria-describedby="biz-e" autocomplete="organization" required=""><template data-sc="if" value="{{e_biz}}" hint-placeholder-val="{{false}}"><p class="err" id="biz-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_bizMsg}}</p></template></div>
+<div class="field"><label for="person">Contact person <span class="req" aria-hidden="true">*</span></label><input id="person" class="inp" type="text" placeholder="Full name" value="{{v_person}}" onChange="{{c_person}}" aria-invalid="{{i_person}}" aria-describedby="person-e" autocomplete="name" required=""><template data-sc="if" value="{{e_person}}" hint-placeholder-val="{{false}}"><p class="err" id="person-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_personMsg}}</p></template></div>
+<div class="field"><label for="phone">Phone number <span class="req" aria-hidden="true">*</span></label><input id="phone" class="inp" type="tel" placeholder="Direct line or mobile" value="{{v_phone}}" onChange="{{c_phone}}" aria-invalid="{{i_phone}}" aria-describedby="phone-e" autocomplete="tel" required=""><template data-sc="if" value="{{e_phone}}" hint-placeholder-val="{{false}}"><p class="err" id="phone-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_phoneMsg}}</p></template></div>
+<div class="field"><label for="email">Email <span class="req" aria-hidden="true">*</span></label><input id="email" class="inp" type="email" placeholder="name@business.com" value="{{v_email}}" onChange="{{c_email}}" aria-invalid="{{i_email}}" aria-describedby="email-e" autocomplete="email" required=""><template data-sc="if" value="{{e_email}}" hint-placeholder-val="{{false}}"><p class="err" id="email-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_emailMsg}}</p></template></div>
+<div class="field span2"><label for="btype">Business type <span class="req" aria-hidden="true">*</span></label><select id="btype" class="inp" value="{{v_btype}}" onChange="{{c_btype}}" aria-invalid="{{i_btype}}"><option value="">Select business type</option><option value="trader">Trader</option><option value="distributor">Distributor</option><option value="restaurant">Restaurant / catering</option><option value="food">Food business / processor</option><option value="other">Other</option></select><template data-sc="if" value="{{e_btype}}" hint-placeholder-val="{{false}}"><p class="err"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_btypeMsg}}</p></template></div>
+<div class="field span2"><span class="flabel">Required products <span class="req">*</span></span><div class="prodpick"><template data-sc="for" list="{{range}}" as="r" hint-placeholder-count="10"><button class="chip" type="button" aria-pressed="{{r.inQ}}" onClick="{{r.toggle}}">{{r.name}}</button></template></div><template data-sc="if" value="{{e_prods}}" hint-placeholder-val="{{false}}"><p class="err"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_prodsMsg}}</p></template></div>
+<div class="field"><label for="qty">Estimated quantities <span class="req" aria-hidden="true">*</span></label><input id="qty" class="inp" type="text" placeholder="e.g. 400" value="{{v_qty}}" onChange="{{c_qty}}" aria-invalid="{{i_qty}}" aria-describedby="qty-e" required=""><template data-sc="if" value="{{e_qty}}" hint-placeholder-val="{{false}}"><p class="err" id="qty-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_qtyMsg}}</p></template></div>
+<div class="field"><label for="unit">Unit</label><select id="unit" class="inp" value="{{v_unit}}" onChange="{{c_unit}}"><option value="kg">kg per week</option><option value="kgm">kg per month</option><option value="cartons">cartons per week</option><option value="once">one-off order</option></select></div>
+<div class="field span2"><label for="pack">Packaging requirements</label><input id="pack" class="inp" type="text" placeholder="Pack sizes, cartons, labelling…" value="{{v_pack}}" onChange="{{c_pack}}" aria-invalid="{{i_pack}}" aria-describedby="pack-e"><template data-sc="if" value="{{e_pack}}" hint-placeholder-val="{{false}}"><p class="err" id="pack-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_packMsg}}</p></template></div>
+<div class="field span2"><label for="loc">Delivery location <span class="req" aria-hidden="true">*</span></label><input id="loc" class="inp" type="text" placeholder="City / area" value="{{v_loc}}" onChange="{{c_loc}}" aria-invalid="{{i_loc}}" aria-describedby="loc-e" required=""><template data-sc="if" value="{{e_loc}}" hint-placeholder-val="{{false}}"><p class="err" id="loc-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_locMsg}}</p></template></div>
+<div class="field span2"><label for="notes">Additional notes</label><textarea id="notes" class="inp" placeholder="Schedules, specifications, anything else we should know" value="{{v_notes}}" onChange="{{c_notes}}" aria-invalid="{{i_notes}}" aria-describedby="notes-e"></textarea><template data-sc="if" value="{{e_notes}}" hint-placeholder-val="{{false}}"><p class="err" id="notes-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_notesMsg}}</p></template></div>
+</div>
+<button class="btn" type="submit" data-state="{{busyState}}" style="align-self: flex-start"><span class="btn-l">Send quotation request<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></button>
+</form>
+</template>
+<template data-sc="if" value="{{sent}}" hint-placeholder-val="{{false}}"><div class="success" style="border: 0; padding: 8px 0"><span class="success-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg></span><h3 class="d-m">Request received.</h3><p class="lead">Thank you, {{v_person}}. Our sales team will review the request for <b>{{v_biz}}</b> ({{quoteN}} products) and contact you at {{v_email}}.</p><button class="btn btn--ghost" type="button" onClick="{{reset}}"><span class="btn-l">Send another request</span></button></div></template>
+</div>
+</div>
+</section>
+<section class="band on-deep" id="sales">
+<div class="wrap band-g">
+<div style="display: flex; flex-direction: column; gap: 14px"><p class="eyebrow"><b>Sales</b> / Prefer to talk?</p><p class="d-m">Speak with our business team.</p></div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 20px; font-weight: 700"><span>[Sales phone number]</span><span>[Sales email address]</span><span class="hint" style="color: rgba(255,255,255,.7)">[Business hours — to be confirmed]</span></div>
+<a class="btn btn--white" href="Contact.dc.html" data-mag=""><span class="btn-l">Contact sales<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a>
+</div>
+</section>
+</main>
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr-top">
+<div class="ftr-brand"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"><p class="body" style="max-width: 36ch">Quality you can trust. Freshness you can feel. For homes and for businesses.</p></div>
+<div><h4>Explore</h4><ul><li><a href="Home.dc.html">Home</a></li><li><a href="About.dc.html">About Us</a></li><li><a href="Products.dc.html">Products</a></li><li><a href="Contact.dc.html">Contact</a></li><li><a href="Account.dc.html">My Account</a></li></ul></div><div><h4>Products</h4><ul><li><a href="Products.dc.html">Whole Birds</a></li><li><a href="Products.dc.html">Fresh Cuts</a></li><li><a href="Products.dc.html">Boneless &amp; Fillets</a></li><li><a href="Products.dc.html">Ready to Cook</a></li></ul></div><div><h4>Business</h4><ul><li><a href="Wholesale.dc.html">Wholesale Solutions</a></li><li><a href="Wholesale.dc.html">Request a Quotation</a></li><li><a href="Wholesale.dc.html">Restaurants &amp; Catering</a></li><li><a href="Wholesale.dc.html">Distributors &amp; Traders</a></li></ul></div>
+<div><h4>Contact</h4><ul><li class="ftr-ph">[Phone number]</li><li class="ftr-ph">[Email address]</li><li class="ftr-ph">[Address — awaiting confirmation]</li></ul><h4 style="margin-top: 32px">Follow</h4><div class="socials"><a href="#" aria-label="Facebook — link to confirm">Facebook</a><a href="#" aria-label="Instagram — link to confirm">Instagram</a><a href="#" aria-label="LinkedIn — link to confirm">LinkedIn</a><a href="#" aria-label="WhatsApp — link to confirm">WhatsApp</a></div></div>
+</div>
+<p class="ftr-slogan" lang="en" dir="ltr" data-rv="mask"><span>....</span>the place to be<span>....</span></p>
+<div class="ftr-bot"><span>© 2026 AL AMIN for Poultry Production. All rights reserved.</span><span>Contact details &amp; social accounts awaiting company confirmation</span></div>
+</div>
+</footer>
+<template data-sc="if" value="{{hasToast}}" hint-placeholder-val="{{false}}">
+<div class="toast" role="status" aria-live="polite"><span class="toast-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg></span><p><b>Added to cart</b>{{toastName}}</p><a class="btn btn--white btn--sm" href="Cart.dc.html"><span class="btn-l">View cart</span></a></div>
+</template>
+<p class="proto"><span class="ph-dot"></span>Design prototype · sample content &amp; prices</p>
+<div class="cur" aria-hidden="true"><div class="cur-ring"></div><div class="cur-dot"></div></div>
+</div>
+</template>
+<template id="tpl-Contact">
+
+<div class="aa" lang="en">
+<div class="pt" aria-hidden="true"></div>
+<header class="hdr" data-solid="0">
+<div class="hdr-in">
+<a class="logo-tab" href="Home.dc.html" aria-label="AL AMIN for Poultry Production — home" data-cursor="HOME"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"></a>
+<nav class="nav" aria-label="Primary"><a class="nav-a" href="Home.dc.html">Home</a><a class="nav-a" href="About.dc.html">About</a><a class="nav-a" href="Products.dc.html">Products</a><a class="nav-a" href="Wholesale.dc.html">Wholesale</a><a class="nav-a" href="Contact.dc.html" aria-current="page">Contact</a></nav>
+<div class="tools">
+<a class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a>
+<a class="tool hide-m" href="Account.dc.html" aria-label="My account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="M4.5 20c1.2-3.8 4-5.6 7.5-5.6s6.3 1.8 7.5 5.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg></a>
+<a class="tool" href="Cart.dc.html" aria-label="Cart, {{cart}} items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8zM9 8V6.5a3 3 0 016 0V8" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg><span class="badge {{bumpCls}}">{{cart}}</span></a>
+<button class="tool burger" type="button" onClick="{{toggleMenu}}" aria-label="Open menu" aria-expanded="{{menuStr}}"><i></i></button>
+</div>
+</div>
+<span class="hdr-bar" aria-hidden="true"></span>
+</header>
+<template data-sc="if" value="{{menuOpen}}" hint-placeholder-val="{{false}}">
+<div class="mm" role="dialog" aria-modal="true" aria-label="Menu">
+<div class="mm-top"><img data-ref="img:logo" alt="AL AMIN"><button class="ibtn" type="button" style="border-color: rgba(255,255,255,.3); color: #fff" onClick="{{closeMenu}}" aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2"></path></svg></button></div>
+<nav class="mm-nav" aria-label="Mobile"><a class="mm-a" href="Home.dc.html" style="--i: 0" onClick="{{closeMenu}}">Home<small>01</small></a><a class="mm-a" href="About.dc.html" style="--i: 1" onClick="{{closeMenu}}">About<small>02</small></a><a class="mm-a" href="Products.dc.html" style="--i: 2" onClick="{{closeMenu}}">Products<small>03</small></a><a class="mm-a" href="Wholesale.dc.html" style="--i: 3" onClick="{{closeMenu}}">Wholesale<small>04</small></a><a class="mm-a" href="Contact.dc.html" style="--i: 4" onClick="{{closeMenu}}">Contact<small>05</small></a><a class="mm-a" href="Account.dc.html" style="--i: 5" onClick="{{closeMenu}}">Account<small>06</small></a><a class="mm-a" href="Cart.dc.html" style="--i: 6" onClick="{{closeMenu}}">Cart<small>07</small></a></nav>
+<div class="mm-foot"><a class="btn btn--red btn--block" href="Wholesale.dc.html"><span class="btn-l">Business inquiry<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a style="color: #fff; align-self: flex-start" class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a><p class="slogan" style="font-size: 20px">....the place to be....</p></div>
+</div>
+</template>
+<main>
+<section class="phero">
+<div class="phero-media"><div class="ph ph--clay has-img"><div class="ph-in"><img data-ref="img:contact-hero" alt="AL AMIN chicken pack with hens and fresh eggs" loading="lazy" style="object-position: 50% 30%"></div></div><div class="hero-scrim"></div></div>
+<div class="wrap phero-in">
+<nav class="crumbs fu" aria-label="Breadcrumb" style="--i: 0"><a href="Home.dc.html">Home</a><i></i><span aria-current="page">Contact</span></nav>
+<p class="eyebrow fu" style="--i: 1"><b>Contact</b> / Get in touch</p>
+<h1 class="d-xl" style="max-width: 12ch"><span class="ln"><span style="--i: 0">Let’s</span></span><span class="ln"><span style="--i: 1">talk.</span></span></h1>
+<p class="lead fu" style="--i: 3">Questions about an order, our products or supplying your business — our team is here to help.</p>
+
+</div>
+</section>
+<section class="sec">
+<div class="wrap cg">
+<div>
+<p class="eyebrow" style="margin-bottom: 28px"><b>01</b> / Send a message</p>
+<template data-sc="if" value="{{notSent}}" hint-placeholder-val="{{true}}">
+<form onSubmit="{{submit}}" novalidate="" style="display: flex; flex-direction: column; gap: 24px">
+<template data-sc="if" value="{{hasErr}}" hint-placeholder-val="{{false}}"><div class="errsum" role="alert"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg><span>{{errN}} field(s) need your attention.</span></div></template>
+<div class="fgrid">
+<div class="field"><label for="name">Full name <span class="req" aria-hidden="true">*</span></label><input id="name" class="inp" type="text" placeholder="Your name" value="{{v_name}}" onChange="{{c_name}}" aria-invalid="{{i_name}}" aria-describedby="name-e" autocomplete="name" required=""><template data-sc="if" value="{{e_name}}" hint-placeholder-val="{{false}}"><p class="err" id="name-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_nameMsg}}</p></template></div>
+<div class="field"><label for="phone">Phone number</label><input id="phone" class="inp" type="tel" placeholder="Optional" value="{{v_phone}}" onChange="{{c_phone}}" aria-invalid="{{i_phone}}" aria-describedby="phone-e" autocomplete="tel"><template data-sc="if" value="{{e_phone}}" hint-placeholder-val="{{false}}"><p class="err" id="phone-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_phoneMsg}}</p></template></div>
+<div class="field"><label for="email">Email <span class="req" aria-hidden="true">*</span></label><input id="email" class="inp" type="email" placeholder="you@example.com" value="{{v_email}}" onChange="{{c_email}}" aria-invalid="{{i_email}}" aria-describedby="email-e" autocomplete="email" required=""><template data-sc="if" value="{{e_email}}" hint-placeholder-val="{{false}}"><p class="err" id="email-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_emailMsg}}</p></template></div>
+<div class="field"><label for="topic">Topic <span class="req" aria-hidden="true">*</span></label><select id="topic" class="inp" value="{{v_topic}}" onChange="{{c_topic}}" aria-invalid="{{i_topic}}"><option value="">Select a topic</option><option value="general">General enquiry</option><option value="order">Order support</option><option value="business">Business / wholesale</option><option value="feedback">Feedback</option></select><template data-sc="if" value="{{e_topic}}" hint-placeholder-val="{{false}}"><p class="err"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_topicMsg}}</p></template></div>
+<div class="field span2"><label for="msg">Message <span class="req" aria-hidden="true">*</span></label><textarea id="msg" class="inp" placeholder="How can we help?" value="{{v_msg}}" onChange="{{c_msg}}" aria-invalid="{{i_msg}}" aria-describedby="msg-e" required=""></textarea><template data-sc="if" value="{{e_msg}}" hint-placeholder-val="{{false}}"><p class="err" id="msg-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_msgMsg}}</p></template></div>
+</div>
+<button class="btn" type="submit" data-state="{{busyState}}" data-mag="" style="align-self: flex-start"><span class="btn-l">Send message<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></button>
+</form>
+</template>
+<template data-sc="if" value="{{sent}}" hint-placeholder-val="{{false}}"><div class="success"><span class="success-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg></span><h3 class="d-m">Message sent.</h3><p class="lead">Thanks, {{v_name}}. We’ll reply to {{v_email}} as soon as we can.</p><button class="btn btn--ghost" type="button" onClick="{{reset}}"><span class="btn-l">Send another</span></button></div></template>
+</div>
+<aside>
+<div class="cinfo">
+<div class="crow"><span>Phone</span><p>[Phone number]</p></div>
+<div class="crow"><span>Email</span><p>[Email address]</p></div>
+<div class="crow"><span>Address</span><p>[Company address — to be confirmed]</p></div>
+<div class="crow"><span>Working hours</span><p>[To be confirmed]</p></div>
+</div>
+<div class="socials" style="margin-top: 24px"><a href="#" style="border-color: var(--line)">Facebook</a><a href="#" style="border-color: var(--line)">Instagram</a><a href="#" style="border-color: var(--line)">LinkedIn</a><a href="#" style="border-color: var(--line)">WhatsApp</a></div>
+<div class="biz-box on-navy"><p class="eyebrow"><b>B2B</b> / Business inquiry</p><p class="d-s">Need wholesale pricing or a supply arrangement?</p><a class="btn btn--white" href="Wholesale.dc.html"><span class="btn-l">Request a quotation<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a></div>
+</aside>
+</div>
+</section>
+<section><div class="ph ph--steel map" data-rv="img"><div class="ph-in"></div><span class="ph-cross" style="color: #fff"></span><span class="ph-cap">Map embed — location to be confirmed</span></div></section>
+</main>
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr-top">
+<div class="ftr-brand"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"><p class="body" style="max-width: 36ch">Quality you can trust. Freshness you can feel. For homes and for businesses.</p></div>
+<div><h4>Explore</h4><ul><li><a href="Home.dc.html">Home</a></li><li><a href="About.dc.html">About Us</a></li><li><a href="Products.dc.html">Products</a></li><li><a href="Contact.dc.html">Contact</a></li><li><a href="Account.dc.html">My Account</a></li></ul></div><div><h4>Products</h4><ul><li><a href="Products.dc.html">Whole Birds</a></li><li><a href="Products.dc.html">Fresh Cuts</a></li><li><a href="Products.dc.html">Boneless &amp; Fillets</a></li><li><a href="Products.dc.html">Ready to Cook</a></li></ul></div><div><h4>Business</h4><ul><li><a href="Wholesale.dc.html">Wholesale Solutions</a></li><li><a href="Wholesale.dc.html">Request a Quotation</a></li><li><a href="Wholesale.dc.html">Restaurants &amp; Catering</a></li><li><a href="Wholesale.dc.html">Distributors &amp; Traders</a></li></ul></div>
+<div><h4>Contact</h4><ul><li class="ftr-ph">[Phone number]</li><li class="ftr-ph">[Email address]</li><li class="ftr-ph">[Address — awaiting confirmation]</li></ul><h4 style="margin-top: 32px">Follow</h4><div class="socials"><a href="#" aria-label="Facebook — link to confirm">Facebook</a><a href="#" aria-label="Instagram — link to confirm">Instagram</a><a href="#" aria-label="LinkedIn — link to confirm">LinkedIn</a><a href="#" aria-label="WhatsApp — link to confirm">WhatsApp</a></div></div>
+</div>
+<p class="ftr-slogan" lang="en" dir="ltr" data-rv="mask"><span>....</span>the place to be<span>....</span></p>
+<div class="ftr-bot"><span>© 2026 AL AMIN for Poultry Production. All rights reserved.</span><span>Contact details &amp; social accounts awaiting company confirmation</span></div>
+</div>
+</footer>
+<template data-sc="if" value="{{hasToast}}" hint-placeholder-val="{{false}}">
+<div class="toast" role="status" aria-live="polite"><span class="toast-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg></span><p><b>Added to cart</b>{{toastName}}</p><a class="btn btn--white btn--sm" href="Cart.dc.html"><span class="btn-l">View cart</span></a></div>
+</template>
+<p class="proto"><span class="ph-dot"></span>Design prototype · sample content &amp; prices</p>
+<div class="cur" aria-hidden="true"><div class="cur-ring"></div><div class="cur-dot"></div></div>
+</div>
+</template>
+<template id="tpl-Account">
+
+<div class="aa" lang="en">
+<div class="pt" aria-hidden="true"></div>
+<header class="hdr" data-solid="0">
+<div class="hdr-in">
+<a class="logo-tab" href="Home.dc.html" aria-label="AL AMIN for Poultry Production — home" data-cursor="HOME"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"></a>
+<nav class="nav" aria-label="Primary"><a class="nav-a" href="Home.dc.html">Home</a><a class="nav-a" href="About.dc.html">About</a><a class="nav-a" href="Products.dc.html">Products</a><a class="nav-a" href="Wholesale.dc.html">Wholesale</a><a class="nav-a" href="Contact.dc.html">Contact</a></nav>
+<div class="tools">
+<a class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a>
+<a class="tool hide-m" href="Account.dc.html" aria-label="My account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="M4.5 20c1.2-3.8 4-5.6 7.5-5.6s6.3 1.8 7.5 5.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg></a>
+<a class="tool" href="Cart.dc.html" aria-label="Cart, {{cart}} items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8zM9 8V6.5a3 3 0 016 0V8" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg><span class="badge {{bumpCls}}">{{cart}}</span></a>
+<button class="tool burger" type="button" onClick="{{toggleMenu}}" aria-label="Open menu" aria-expanded="{{menuStr}}"><i></i></button>
+</div>
+</div>
+<span class="hdr-bar" aria-hidden="true"></span>
+</header>
+<template data-sc="if" value="{{menuOpen}}" hint-placeholder-val="{{false}}">
+<div class="mm" role="dialog" aria-modal="true" aria-label="Menu">
+<div class="mm-top"><img data-ref="img:logo" alt="AL AMIN"><button class="ibtn" type="button" style="border-color: rgba(255,255,255,.3); color: #fff" onClick="{{closeMenu}}" aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2"></path></svg></button></div>
+<nav class="mm-nav" aria-label="Mobile"><a class="mm-a" href="Home.dc.html" style="--i: 0" onClick="{{closeMenu}}">Home<small>01</small></a><a class="mm-a" href="About.dc.html" style="--i: 1" onClick="{{closeMenu}}">About<small>02</small></a><a class="mm-a" href="Products.dc.html" style="--i: 2" onClick="{{closeMenu}}">Products<small>03</small></a><a class="mm-a" href="Wholesale.dc.html" style="--i: 3" onClick="{{closeMenu}}">Wholesale<small>04</small></a><a class="mm-a" href="Contact.dc.html" style="--i: 4" onClick="{{closeMenu}}">Contact<small>05</small></a><a class="mm-a" href="Account.dc.html" style="--i: 5" onClick="{{closeMenu}}">Account<small>06</small></a><a class="mm-a" href="Cart.dc.html" style="--i: 6" onClick="{{closeMenu}}">Cart<small>07</small></a></nav>
+<div class="mm-foot"><a class="btn btn--red btn--block" href="Wholesale.dc.html"><span class="btn-l">Business inquiry<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></a><a style="color: #fff; align-self: flex-start" class="tool lang" href="Home-AR.dc.html" lang="ar" aria-label="التبديل إلى العربية">عربي</a><p class="slogan" style="font-size: 20px">....the place to be....</p></div>
+</div>
+</template>
+<main>
+<section class="phero phero--compact">
+
+<div class="wrap phero-in">
+<nav class="crumbs fu" aria-label="Breadcrumb" style="--i: 0"><a href="Home.dc.html">Home</a><i></i><span aria-current="page">My Account</span></nav>
+<p class="eyebrow fu" style="--i: 1"><b>Account</b> / My AL AMIN</p>
+<h1 class="d-xl" style="max-width: 12ch"><span class="ln"><span style="--i: 0">{{greet1}}</span></span><span class="ln"><span style="--i: 1">{{greet2}}</span></span></h1>
+
+<div class="proto-bar fu" style="--i: 3">Prototype state<div class="seg" role="group" aria-label="Account state"><button type="button" aria-pressed="{{outP}}" onClick="{{logout}}">Logged out</button><button type="button" aria-pressed="{{inP}}" onClick="{{login}}">Logged in</button></div></div>
+</div>
+</section>
+<section class="sec" style="padding-top: 64px">
+<div class="wrap">
+<template data-sc="if" value="{{out}}" hint-placeholder-val="{{true}}">
+<div class="auth">
+<div class="auth-side"><div class="ph ph--warm"><div class="ph-in"></div><span class="ph-cap">Home kitchen, family dinner prep, morning light</span></div></div>
+<div class="auth-f">
+<div class="tabs" role="tablist"><button class="tab" type="button" role="tab" aria-selected="{{tabLogin}}" onClick="{{toLogin}}">Sign in</button><button class="tab" type="button" role="tab" aria-selected="{{tabReg}}" onClick="{{toReg}}">Create account</button></div>
+<template data-sc="if" value="{{isLogin}}" hint-placeholder-val="{{true}}">
+<form class="view-in" onSubmit="{{doLogin}}" novalidate="" style="display: flex; flex-direction: column; gap: 22px">
+<h2 class="d-m">Welcome back.</h2>
+<div class="field"><label for="lid">Email or phone <span class="req" aria-hidden="true">*</span></label><input id="lid" class="inp" type="text" placeholder="you@example.com" value="{{v_lid}}" onChange="{{c_lid}}" aria-invalid="{{i_lid}}" aria-describedby="lid-e" autocomplete="username" required=""><template data-sc="if" value="{{e_lid}}" hint-placeholder-val="{{false}}"><p class="err" id="lid-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_lidMsg}}</p></template></div>
+<div class="field"><label for="lpw">Password <span class="req">*</span></label><div class="pw"><input id="lpw" class="inp" type="{{pwType}}" placeholder="Your password" value="{{v_lpw}}" onChange="{{c_lpw}}" aria-invalid="{{i_lpw}}" autocomplete="current-password"><button type="button" onClick="{{togglePw}}" aria-label="Show or hide password">{{pwLabel}}</button></div><template data-sc="if" value="{{e_lpw}}" hint-placeholder-val="{{false}}"><p class="err"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_lpwMsg}}</p></template></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap"><label class="chk"><input type="checkbox">Keep me signed in</label><a class="tlink" href="#" style="font-size: 12px">Forgot password?</a></div>
+<button class="btn btn--block" type="submit" data-state="{{busyState}}"><span class="btn-l">Sign in<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></button>
+<p class="hint">New to AL AMIN? <button class="tlink" type="button" onClick="{{toReg}}" style="background: none; border: 0; cursor: pointer; font-size: 12px">Create an account</button></p>
+</form>
+</template>
+<template data-sc="if" value="{{isReg}}" hint-placeholder-val="{{false}}">
+<form class="view-in" onSubmit="{{doReg}}" novalidate="" style="display: flex; flex-direction: column; gap: 22px">
+<h2 class="d-m">Create your account.</h2>
+<div class="fgrid"><div class="field"><label for="rname">Full name <span class="req" aria-hidden="true">*</span></label><input id="rname" class="inp" type="text" placeholder="" value="{{v_rname}}" onChange="{{c_rname}}" aria-invalid="{{i_rname}}" aria-describedby="rname-e" autocomplete="name" required=""><template data-sc="if" value="{{e_rname}}" hint-placeholder-val="{{false}}"><p class="err" id="rname-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_rnameMsg}}</p></template></div><div class="field"><label for="rphone">Phone number <span class="req" aria-hidden="true">*</span></label><input id="rphone" class="inp" type="tel" placeholder="" value="{{v_rphone}}" onChange="{{c_rphone}}" aria-invalid="{{i_rphone}}" aria-describedby="rphone-e" autocomplete="tel" required=""><template data-sc="if" value="{{e_rphone}}" hint-placeholder-val="{{false}}"><p class="err" id="rphone-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_rphoneMsg}}</p></template></div><div class="field span2"><label for="remail">Email <span class="req" aria-hidden="true">*</span></label><input id="remail" class="inp" type="email" placeholder="" value="{{v_remail}}" onChange="{{c_remail}}" aria-invalid="{{i_remail}}" aria-describedby="remail-e" autocomplete="email" required=""><template data-sc="if" value="{{e_remail}}" hint-placeholder-val="{{false}}"><p class="err" id="remail-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_remailMsg}}</p></template></div><div class="field"><label for="rpw">Password <span class="req" aria-hidden="true">*</span></label><input id="rpw" class="inp" type="password" placeholder="At least 8 characters" value="{{v_rpw}}" onChange="{{c_rpw}}" aria-invalid="{{i_rpw}}" aria-describedby="rpw-e" autocomplete="new-password" required=""><template data-sc="if" value="{{e_rpw}}" hint-placeholder-val="{{false}}"><p class="err" id="rpw-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_rpwMsg}}</p></template></div><div class="field"><label for="rpw2">Confirm password <span class="req" aria-hidden="true">*</span></label><input id="rpw2" class="inp" type="password" placeholder="" value="{{v_rpw2}}" onChange="{{c_rpw2}}" aria-invalid="{{i_rpw2}}" aria-describedby="rpw2-e" autocomplete="new-password" required=""><template data-sc="if" value="{{e_rpw2}}" hint-placeholder-val="{{false}}"><p class="err" id="rpw2-e"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_rpw2Msg}}</p></template></div></div>
+<label class="chk"><input id="rterms" type="checkbox" checked="{{v_rterms}}" onChange="{{c_rterms}}">I agree to the terms and privacy policy <span class="req">*</span></label>
+<template data-sc="if" value="{{e_rterms}}" hint-placeholder-val="{{false}}"><p class="err"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 7v6M12 16.5v.5" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>{{e_rtermsMsg}}</p></template>
+<button class="btn btn--block" type="submit" data-state="{{busyState}}"><span class="btn-l">Create account<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></span></button>
+</form>
+</template>
+</div>
+</div>
+</template>
+<template data-sc="if" value="{{isIn}}" hint-placeholder-val="{{false}}">
+<div class="dash">
+<nav class="side" aria-label="Account"><template data-sc="for" list="{{nav}}" as="n" hint-placeholder-count="5"><button type="button" aria-current="{{n.cur}}" onClick="{{n.pick}}">{{n.label}}<span aria-hidden="true">→</span></button></template></nav>
+<div>
+<template data-sc="if" value="{{vOverview}}" hint-placeholder-val="{{true}}"><div class="view-in" style="display: flex; flex-direction: column; gap: 32px">
+<div class="tiles">
+<div class="tile"><span class="cap" style="color: var(--red)">Latest order</span><p class="d-s">AA-000124</p><span class="status st-out">Out for delivery</span><button class="tlink" type="button" onClick="{{openOrder}}" style="background: none; border: 0; cursor: pointer; align-self: flex-start">Track order<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></button></div>
+<div class="tile"><span class="cap" style="color: var(--red)">Default address</span><p style="font-weight: 700">[Street, building]</p><p class="hint">[Area, city]</p><button class="tlink" type="button" onClick="{{goAddr}}" style="background: none; border: 0; cursor: pointer; align-self: flex-start">Manage<svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h16M13 5.5l6.5 6.5-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path></svg></button></div>
+<div class="tile on-navy" style="border: 0"><span class="cap">Quick reorder</span><p class="d-s">Breast fillets ×2, Whole chicken ×1</p><button class="btn btn--white btn--sm" type="button" onClick="{{reorder}}" style="align-self: flex-start"><span class="btn-l">Reorder</span></button></div>
+</div>
+<p class="note">Sample account data · for layout only</p>
+</div></template>
+<template data-sc="if" value="{{vOrders}}" hint-placeholder-val="{{false}}"><div class="view-in"><h2 class="d-m" style="margin-bottom: 24px">Order history</h2><div class="tscroll" style="overflow-x: auto"><table class="otable"><thead><tr><th>Order</th><th>Date</th><th>Items</th><th>Total</th><th>Status</th><th><span class="vh">Action</span></th></tr></thead><tbody>
+<template data-sc="for" list="{{orders}}" as="o" hint-placeholder-count="3"><tr><td style="font-weight: 800">{{o.id}}</td><td>{{o.date}}</td><td>{{o.items}}</td><td>{{o.total}} EGP</td><td><span class="status {{o.cls}}">{{o.status}}</span></td><td><button class="tlink" type="button" onClick="{{o.open}}" style="background: none; border: 0; cursor: pointer">View</button></td></tr></template>
+</tbody></table></div><p class="note" style="margin-top: 20px">Sample orders</p></div></template>
+<template data-sc="if" value="{{vDetail}}" hint-placeholder-val="{{false}}"><div class="view-in" style="display: flex; flex-direction: column; gap: 28px">
+<button class="tlink" type="button" onClick="{{goOrders}}" style="background: none; border: 0; cursor: pointer; align-self: flex-start">← All orders</button>
+<div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px"><div><p class="cap" style="color: var(--red)">Order details</p><h2 class="d-m">AA-000124</h2></div><span class="status st-out">Out for delivery</span></div>
+<div class="track"><div class="on"><i></i>Placed</div><div class="on"><i></i>Confirmed</div><div class="on"><i></i>Out for delivery</div><div><i></i>Delivered</div></div>
+<div class="split2"><div class="panel"><div class="sum"><div class="osum-i" style="display: grid; grid-template-columns: 1fr auto"><span>Chicken Breast Fillets · 1 kg × 2</span><b>490.00</b></div><div class="osum-i" style="display: grid; grid-template-columns: 1fr auto"><span>Whole Fresh Chicken × 1</span><b>165.00</b></div><div class="osum-i" style="display: grid; grid-template-columns: 1fr auto"><span>Shish Tawook Cubes × 1</span><b>140.00</b></div><div class="sum-tot"><span>Total</span><b>795.00</b></div></div></div>
+<div class="panel"><div class="sum"><p class="cap" style="color: var(--red)">Delivery address</p><p style="font-weight: 700">[Street, building, apartment]</p><p class="hint">[Area, city]</p><p class="cap" style="color: var(--red); margin-top: 12px">Payment</p><p>Cash on delivery (to be confirmed)</p></div></div></div>
+</div></template>
+<template data-sc="if" value="{{vAddr}}" hint-placeholder-val="{{false}}"><div class="view-in"><div style="display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap"><h2 class="d-m">Saved addresses</h2><button class="btn btn--sm btn--navy" type="button" onClick="{{toggleAdd}}"><span class="btn-l"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2.2"></path></svg>Add address</span></button></div>
+<template data-sc="if" value="{{adding}}" hint-placeholder-val="{{false}}"><div class="panel view-in" style="margin-bottom: 24px"><div class="fgrid"><div class="field"><label for="aname">Label</label><input id="aname" class="inp" type="text" placeholder="Home, Office…"></div><div class="field"><label for="astreet">Street address</label><input id="astreet" class="inp" type="text" placeholder=""></div><div class="field"><label for="aarea">Area / city</label><input id="aarea" class="inp" type="text" placeholder=""></div></div><div class="ctas" style="margin-top: 20px"><button class="btn btn--sm" type="button" onClick="{{toggleAdd}}"><span class="btn-l">Save address</span></button><button class="btn btn--sm btn--ghost" type="button" onClick="{{toggleAdd}}"><span class="btn-l">Cancel</span></button></div></div></template>
+<div class="addr"><div class="tile"><span class="def">Default</span><span class="cap" style="color: var(--red)">Home</span><p style="font-weight: 700">[Street, building, apartment]</p><p class="hint">[Area, city] · [Phone]</p><div style="display: flex; gap: 20px"><a class="tlink" href="#" style="font-size: 12px">Edit</a><a class="tlink" href="#" style="font-size: 12px">Remove</a></div></div><div class="tile"><span class="cap" style="color: var(--red)">Office</span><p style="font-weight: 700">[Street, building]</p><p class="hint">[Area, city] · [Phone]</p><div style="display: flex; gap: 20px"><a class="tlink" href="#" style="font-size: 12px">Edit</a><a class="tlink" href="#" style="font-size: 12px">Set default</a></div></div></div></div></template>
+<template data-sc="if" value="{{vInfo}}" hint-placeholder-val="{{false}}"><div class="view-in" style="display: flex; flex-direction: column; gap: 24px; max-width: 760px"><h2 class="d-m">Account details</h2>
+<div class="fgrid"><div class="field"><label for="iname">Full name</label><input id="iname" class="inp" type="text" placeholder="" value="{{v_iname}}" onChange="{{c_iname}}"></div><div class="field"><label for="iphone">Phone number</label><input id="iphone" class="inp" type="tel" placeholder="" value="{{v_iphone}}" onChange="{{c_iphone}}"></div><div class="field span2"><label for="iemail">Email</label><input id="iemail" class="inp" type="email" placeholder="" value="{{v_iemail}}" onChange="{{c_iemail}}"></div><div class="field span2"><label for="ipw">Password</label><input id="ipw" class="inp" type="password" value="password" disabled=""><span class="hint">Disabled state · change via “Change password”</span></div></div>
+<template data-sc="if" value="{{saved}}" hint-placeholder-val="{{false}}"><p class="err" style="color: var(--ok)"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg>Changes saved.</p></template>
+<div class="ctas"><button class="btn" type="button" data-state="{{saveState}}" onClick="{{save}}"><span class="btn-l">Save changes</span></button><button class="btn btn--ghost" type="button"><span class="btn-l">Change password</span></button></div></div></template>
+</div>
+</div>
+</template>
+</div>
+</section>
+</main>
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr-top">
+<div class="ftr-brand"><img data-ref="img:logo" alt="AL AMIN for Poultry Production"><p class="body" style="max-width: 36ch">Quality you can trust. Freshness you can feel. For homes and for businesses.</p></div>
+<div><h4>Explore</h4><ul><li><a href="Home.dc.html">Home</a></li><li><a href="About.dc.html">About Us</a></li><li><a href="Products.dc.html">Products</a></li><li><a href="Contact.dc.html">Contact</a></li><li><a href="Account.dc.html">My Account</a></li></ul></div><div><h4>Products</h4><ul><li><a href="Products.dc.html">Whole Birds</a></li><li><a href="Products.dc.html">Fresh Cuts</a></li><li><a href="Products.dc.html">Boneless &amp; Fillets</a></li><li><a href="Products.dc.html">Ready to Cook</a></li></ul></div><div><h4>Business</h4><ul><li><a href="Wholesale.dc.html">Wholesale Solutions</a></li><li><a href="Wholesale.dc.html">Request a Quotation</a></li><li><a href="Wholesale.dc.html">Restaurants &amp; Catering</a></li><li><a href="Wholesale.dc.html">Distributors &amp; Traders</a></li></ul></div>
+<div><h4>Contact</h4><ul><li class="ftr-ph">[Phone number]</li><li class="ftr-ph">[Email address]</li><li class="ftr-ph">[Address — awaiting confirmation]</li></ul><h4 style="margin-top: 32px">Follow</h4><div class="socials"><a href="#" aria-label="Facebook — link to confirm">Facebook</a><a href="#" aria-label="Instagram — link to confirm">Instagram</a><a href="#" aria-label="LinkedIn — link to confirm">LinkedIn</a><a href="#" aria-label="WhatsApp — link to confirm">WhatsApp</a></div></div>
+</div>
+<p class="ftr-slogan" lang="en" dir="ltr" data-rv="mask"><span>....</span>the place to be<span>....</span></p>
+<div class="ftr-bot"><span>© 2026 AL AMIN for Poultry Production. All rights reserved.</span><span>Contact details &amp; social accounts awaiting company confirmation</span></div>
+</div>
+</footer>
+<template data-sc="if" value="{{hasToast}}" hint-placeholder-val="{{false}}">
+<div class="toast" role="status" aria-live="polite"><span class="toast-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.4"></path></svg></span><p><b>Added to cart</b>{{toastName}}</p><a class="btn btn--white btn--sm" href="Cart.dc.html"><span class="btn-l">View cart</span></a></div>
+</template>
+<p class="proto"><span class="ph-dot"></span>Design prototype · sample content &amp; prices</p>
+<div class="cur" aria-hidden="true"><div class="cur-ring"></div><div class="cur-dot"></div></div>
+</div>
+</template>
+<script src="assets/js/data.js"></script><script src="assets/js/runtime.js"></script><script src="assets/js/pages.js"></script></body>
+</html>
